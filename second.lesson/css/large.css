@@ -1,0 +1,36 @@
+@media screen and (min-width:1225px) {
+    #content {
+        width: 80%;
+        background-color: rgb(94, 94, 94);
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 15px;
+    
+    }
+    
+    header {
+        grid-column: 1/4;
+    }
+    
+    .visual-hierachy {
+        grid-column: 1/2;
+        overflow: hidden;
+    }
+    
+    .repetition {
+        grid-column: 2/3;
+        border-radius: 15px;
+        background-color: #ECECEC;
+        overflow: hidden;
+    }
+    
+    .hicks-law {
+        grid-column: 3/4;
+        border-radius: 15px;
+        background-color: #ECECEC;
+        overflow: hidden;
+    }
+    
+    
+    }
