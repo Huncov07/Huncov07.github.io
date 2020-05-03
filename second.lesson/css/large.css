@@ -1,7 +1,7 @@
 @media screen and (min-width:1225px) {
     #content {
         width: 80%;
-        background-color: rgb(94, 94, 94);
+        background-color: #cac5c5;
         border-radius: 5px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -21,14 +21,14 @@
     .repetition {
         grid-column: 2/3;
         border-radius: 15px;
-        background-color: #ECECEC;
+        background-color: #f0c03d;
         overflow: hidden;
     }
     
     .hicks-law {
         grid-column: 3/4;
         border-radius: 15px;
-        background-color: #ECECEC;
+        background-color: #cac5c5;
         overflow: hidden;
     }
     
