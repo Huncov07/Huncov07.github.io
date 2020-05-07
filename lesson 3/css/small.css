@@ -1,0 +1,49 @@
+body {
+    background-color: #cac5c5;
+}
+#content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 15px;
+    background-color: azure;
+    border-radius: 5px;
+
+}
+
+header {
+    background-color:#f0c03d;
+    border-radius: 5px;
+    padding: 5px 5px 15px 5px;
+    color: white;
+    text-align: center;
+
+}
+header h1 {
+    display: inline;
+}
+h1, h2, h3, h4 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+p, ul {
+    font-family:  'Comic Nueu', cursive;
+}
+
+footer {
+    background-color: #f0c03d;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+
+}
+footer a {
+    color: white;
+}
+
+
+img {
+    width: 90%;
+    border-radius: 5px;
+}
