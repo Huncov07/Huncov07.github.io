@@ -1,49 +1,193 @@
 body {
-    background-color: #cac5c5;
+    margin: 0;
+    padding: 0;
+    background-color: #a39a9a;
+    font-size: 16px;
 }
-#content {
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    padding: 15px;
-    background-color: azure;
-    border-radius: 5px;
 
+#content {
+    margin: 0 auto;
+    padding: 0 15px;
+    background-color: white;
 }
 
 header {
     background-color:#f0c03d;
-    border-radius: 5px;
-    padding: 5px 5px 15px 5px;
     color: white;
     text-align: center;
+    margin: 0 auto;
+}  
 
-}
+
+
 header h1 {
-    display: inline;
-}
-h1, h2, h3, h4 {
-    font-family: 'Roboto Mono', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 15px;
+    margin-top: 0;
+
 }
 
-p, ul {
-    font-family:  'Comic Nueu', fantasy;
+header h2 {
+    margin-bottom: 0;
+    padding-bottom: 10px;
 }
 
-footer {
-    background-color: #f0c03d;
-    border-radius: 5px;
-    padding: 5px;
+nav {
+    background-color: #D9CAB3;
     text-align: center;
-    color: white;
-
-}
-footer a {
-    color: white;
+    box-shadow: 0 2px 15px gray;
 }
 
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
 
-img {
-    width: 90%;
-    border-radius: 5px;
+
+
+nav a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    text-align: center;
+    font-size: 0.95em;
+    padding: 1em;
+    margin: 0;
+}
+
+nav a:hover {
+    background-color:#f0c03d;
+    color: white;
+}
+
+
+
+p, a {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 15px;
+    font-family: 'Comic Neue', fantasy;
+    line-height: 1.5em;
+
+}
+
+li {
+    font-family: 'Comic Neue', fantasy;
+}
+
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto Mono''Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, ;
+}
+
+
+/*For Color Scheme*/
+.colors {
+    width: 100%;
+    text-align: center;
+}
+.colors tr {
+    padding: 15px;
+}
+
+.colors th { 
+    background-color: #a39a9a;
+    height: 3em;
+
+}
+
+.colors td {   
+    height: 3em;
+}
+
+.colors .primary {
+    background-color:#35502B;
+    color: white;
+}
+.colors .secondary {
+    background-color: #D9CAB3;
+}
+.colors .accent1 {
+    background-color: #D9CAB3;
+}
+.colors .accent2 {
+    background-color: #444444;
+    color: white;
+}
+
+/*Typography*/
+.container {
+    overflow-x: auto;
+}
+.typography {
+    text-align: left;
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.typography tr, .typography td, .typography th {
+    height: 3em;
+    padding-left: 0.5em;
+    border: 1px solid black;
+}
+
+.fortypexel, .sixteenFpexel {
+    background-color: #f0c03d;
+    color: white;
+}
+
+.sixteenPpexel {
+    background-color: #D9CAB3;
+    font-family: 'Roboto Mono';
+}
+
+.sixteenFpexel {
+    font-family: 'Roboto Mono';
+}
+
+.fortypexel {
+    font-size: 40px;
+    font-family: 'Roboto Mono';
+    padding-left: 0;
+}
+
+.header1, .header2, .header3 {
+    font-family: 'Roboto Mono';
+}
+
+.paragrapgh, .linkText {
+    font-family: 'Comic Neue';
+}
+
+.header1 {
+    font-size: 32px;
+}
+
+.header2 {
+    font-size: 24px;
+}
+
+.header3 {
+    font-size: 18px;
+}
+
+.green1 {
+    background-color: #f0c03d;
+    color: white;
+}
+
+.yellow {
+    background-color: #E7C24F;
+}
+
+/*Target Audience*/
+
+.persona {
+    display: block;
+}
+
+.persona img {
+    width: 30%;
 }
