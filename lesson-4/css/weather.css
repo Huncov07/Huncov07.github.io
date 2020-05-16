@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Calligraffitti|IM+Fell+English:400i|IM+Fell+Great+Primer:400i|Lato:100i&display=swap');
 body {
     font-size: 16px;
-    font-family: cursive;
+    font-family: initial;
     margin: 0 auto;
 }
 
 h1 {
-    font-family: 'Calligraffitti', cursive;
+    font-family: 'Comic Nueu', fantasy;
     text-align: center;
 }
 
@@ -14,8 +14,7 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: 'Lato', sans-serif;
-    padding: .5em;
+    font-family: 'Roboto Mono', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 header {
@@ -135,8 +134,8 @@ nav ul li a {
 p {
     margin: .5px;
     padding: 6px;
-    font-family: 'Lato', sans-serif;
-}
+    font-family: 'Roboto Mono', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+};
 
 main {
     font-size: 0.8rem;
