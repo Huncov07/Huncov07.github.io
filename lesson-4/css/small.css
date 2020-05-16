@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #D9CAB3;
+    background-color: #E7C24F;
     font-size: 16px;
 }
 
@@ -57,7 +57,7 @@ header {
 
 
 nav {
-    background-color: #D9CAB3;
+    background-color: #E7C24F;
     text-align: center;
     box-shadow: 0 2px 15px gray;
 }
@@ -97,7 +97,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #E7C24F;
+    background-color: #D9CAB3;
     color: white;
 
 }
