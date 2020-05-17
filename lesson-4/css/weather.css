@@ -45,14 +45,13 @@ header img {
 }
 
 .iconH4 {
-    font-style: italic;
     letter-spacing: 1pt;
     font-size: 15px;
     padding: 5px;
 }
 
 footer {
-    background-color: #f7882f;
+    background-color: #f7c331;
     border-radius: 3px 3px 15px 15px;
     padding: 10px;
     text-align: center;
