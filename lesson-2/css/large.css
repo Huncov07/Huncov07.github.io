@@ -1,7 +1,7 @@
 @media screen and (min-width:1225px) {
     #content {
         width: 80%;
-        background-color: #cac5c5;
+        background-color: #6b7a8f;
         border-radius: 5px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -21,14 +21,14 @@
     .repetition {
         grid-column: 2/3;
         border-radius: 15px;
-        background-color: #f0c03d;
+        background-color: #f7882f;
         overflow: hidden;
     }
     
     .fitts-law {
         grid-column: 3/4;
         border-radius: 15px;
-        background-color: #cac5c5;
+        background-color: #f7c331;
         overflow: hidden;
     }
     

@@ -15,7 +15,7 @@
         margin-bottom: 0;
         grid-column: 1/2;
         border-radius: 15px;
-        background-color: #F0EEEE;
+        background-color: #6b7a8f;
         overflow: hidden;
     }
     
@@ -23,7 +23,7 @@
         margin-bottom: 0;
         grid-column: 2/3;
         border-radius: 15px;
-        background-color: #F0EEEE;
+        background-color: #f7882f;
         overflow: hidden;
     }
 
@@ -31,7 +31,7 @@
         margin-bottom: 0;
         grid-column: 1/3;
         border-radius: 15px;
-        background-color: #F0EEEE;
+        background-color: #f7c331;
         overflow: hidden;
     }
 }
