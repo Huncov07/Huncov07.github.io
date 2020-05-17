@@ -14,14 +14,16 @@
     }
     
     .contrast {
-        grid-column: 1/2;
+        grid-column: 1/4;
+        border-radius: 15px;
+        background-color: #6b7a8f;
         overflow: hidden;
     }
     
     .repetition {
         grid-column: 2/3;
         border-radius: 15px;
-        background-color: #f7882f;
+        background-color: beige;
         overflow: hidden;
     }
     
