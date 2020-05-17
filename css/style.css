@@ -1,18 +1,18 @@
 body {
-    background-color: #cac5c5;
+    background-color: #6b7a84;
 }
 #content {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     padding: 15px;
-    background-color: azure;
+    background-color: #dcc7aa;
     border-radius: 5px;
 
 }
 
 header {
-    background-color:#f0c03d;
+    background-color:#f7882f;
     border-radius: 5px;
     padding: 5px 5px 15px 5px;
     color: white;
@@ -31,7 +31,7 @@ p, ul {
 }
 
 footer {
-    background-color: #f0c03d;
+    background-color: #f7c331;
     border-radius: 5px;
     padding: 5px;
     text-align: center;

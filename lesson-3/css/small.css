@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #a39a9a;
+    background-color: #dcc7aa;
     font-size: 16px;
 }
 
@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color:#f0c03d;
+    background-color:#6b7a8f;
     color: white;
     text-align: center;
     margin: 0 auto;
@@ -32,7 +32,7 @@ header h2 {
 }
 
 nav {
-    background-color: #D9CAB3;
+    background-color: #f7882f;
     text-align: center;
     box-shadow: 0 2px 15px gray;
 }
@@ -57,7 +57,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color:#f0c03d;
+    background-color:#f7c331;
     color: white;
 }
 
@@ -92,7 +92,7 @@ h1, h2, h3, h4 {
 }
 
 .colors th { 
-    background-color: #a39a9a;
+    background-color: #6b7a8f;
     height: 3em;
 
 }
@@ -102,7 +102,7 @@ h1, h2, h3, h4 {
 }
 
 .colors .primary {
-    background-color:#f0c03d;
+    background-color:#dcc7aa;
     color: white;
 }
 .colors .secondary {
@@ -112,7 +112,7 @@ h1, h2, h3, h4 {
     background-color: #D9CAB3;
 }
 .colors .accent2 {
-    background-color: #444444;
+    background-color: #6b7a8f;
     color: white;
 }
 
@@ -134,12 +134,12 @@ h1, h2, h3, h4 {
 }
 
 .fortypexel, .sixteenFpexel {
-    background-color: #f0c03d;
+    background-color: #f7c331;
     color: white;
 }
 
 .sixteenPpexel {
-    background-color: #D9CAB3;
+    background-color: #dcc7aa;
     font-family: 'Roboto Mono';
 }
 
@@ -174,12 +174,12 @@ h1, h2, h3, h4 {
 }
 
 .green1 {
-    background-color: #f0c03d;
+    background-color: #6b7a8f;
     color: white;
 }
 
 .yellow {
-    background-color: #E7C24F;
+    background-color: #f7882f;
 }
 
 /*Target Audience*/
