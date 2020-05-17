@@ -5,7 +5,7 @@ body {
     font-family: sans-serif;
     padding: .5em;
     margin: 0 auto;
-    color: #f0c03d;
+    color:  #6b7a84;
 }
 
 h1 {
@@ -23,7 +23,7 @@ h2 {
 #content {
     width: fit-content;
     margin: 0 auto;
-    background-color: #cac5c5;
+    background-color: #964130;
     padding: .5em;
     box-shadow: 0 0 30px #333;
     border-radius: 10px;
@@ -44,7 +44,7 @@ li {
 
 header {
     text-align: center;
-    background-color: #cac5c5;
+    background-color: #f0c03d;
     color: #964130;
     width: 600px;
     box-shadow: 0 0 8px #333;
@@ -52,7 +52,7 @@ header {
 
 footer {
     text-align: center;
-    background-color: #f0c03d;
+    background-color: #6b7a84;
     color: white;
     width: 600px;
     box-shadow: 0 0 8px #333;
@@ -64,5 +64,5 @@ hr {
 }
 
 #currentdate {
-    color: #964130;
+    color:  #964130;
 }
