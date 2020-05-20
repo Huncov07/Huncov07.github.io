@@ -1,40 +1,49 @@
-@media screen and (min-width: 65em) {
-    nav ul {
-        display: flex; 
-        width: 80%;
-        margin: 0 auto;
-    }
+/* Desktop Views ****************************/
 
+@media only screen and (min-width: 60em) {
+    header img {
+        width: 100px;
+    }
+    .headings h1 {
+        font-size: 3rem;
+    }
+    .iconH4 {
+        letter-spacing: 1.5pt;
+        font-size: larger;
+        margin-left: 17px;
+    }
+    main h1 {
+        text-align: center;
+    }
+    .boxes {
+        background-color: #6b7a8f;
+        color: black;
+        text-align: center;
+    }
+    nav ul {
+        display: flex;
+    }
+    .navigation {
+        display: flex;
+    }
     nav ul li {
         flex: 1 1 100%;
     }
-    
-    nav ul li a {
-        border-top: none;
+    nav a {
+        font-size: 1rem;
     }
-
-    nav ul.hide {
-        display: flex;
+    .navigation li:first-child {
+        display: none;
     }
-
-    header div h1 {
-        font-size: 2em;
+    .navigation li {
+        display: block;
+        /* change state in small view */
+        flex: 1 1 auto;
     }
-
-    
-    button {
-        display: none; 
+    footer {
+        width: 80%;
     }
- 
-
-    /*main*/ 
-        .contentbox {
-            background-color: #dcc7aa;
-        }
-
-     /*footer*/
-        footer {
-            width: 90%;
-        }
-        
+    main {
+        width: 75%;
+    }
 }
