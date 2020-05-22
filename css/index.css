@@ -32,8 +32,8 @@ h2 {
 
 .myimg {
     float: right;
-    width: 175px;
-    height: 200px;
+    width: 20px;
+    height: 80px;
     box-shadow: 0 0 8px #333;
     padding: .3em;
 }
