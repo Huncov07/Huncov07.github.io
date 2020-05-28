@@ -5,25 +5,25 @@ body {
     font-family: sans-serif;
     padding: .5em;
     margin: 0 auto;
-    color:  #6b7a84;
+    color: #D9CAB3;
 }
 
 h1 {
     font-style: italic;
-    color: black;
+    color: #6b7a8f;
     text-align: center;
     padding: .5em;
 }
 
 h2 {
     margin-left: 15px;
-    color:black;
+    color: #f7882f;
 }
 
 #content {
     width: fit-content;
     margin: 0 auto;
-    background-color: #964130;
+    background-color: #D9CAB3;
     padding: .5em;
     box-shadow: 0 0 30px #333;
     border-radius: 10px;
@@ -32,8 +32,8 @@ h2 {
 
 .myimg {
     float: right;
-    width: 20px;
-    height: 80px;
+    width: 175px;
+    height: 200px;
     box-shadow: 0 0 8px #333;
     padding: .3em;
 }
@@ -44,16 +44,16 @@ li {
 
 header {
     text-align: center;
-    background-color: #f0c03d;
-    color: #964130;
+    background-color: #D9CAB3;
+    color: #6b7a8f;
     width: 600px;
     box-shadow: 0 0 8px #333;
 }
 
 footer {
     text-align: center;
-    background-color: #6b7a84;
-    color: white;
+    background-color: #D9CAB3;
+    color: #f7c331;
     width: 600px;
     box-shadow: 0 0 8px #333;
 }
@@ -64,5 +64,5 @@ hr {
 }
 
 #currentdate {
-    color:  #964130;
+    color: #4b7;
 }
