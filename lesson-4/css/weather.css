@@ -6,25 +6,20 @@ body {
 }
 
 h1 {
-    font-family: 'Comic Nueu', fantasy;
-    text-align: center;
-}
-
-h2,
-h3,
-h4,
-h5 {
     font-family: 'Roboto Mono', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    text-shadow: 3px 3px 5px #777;
 }
 
 header {
-    background-color: #6b7a8f;
+    background-color: #D9CAB3;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 15px 15px 0 0;
-    color: #f0f0f0;
+    color: #f7882f;
     padding: 15px 0;
     text-align: center;
 }
@@ -45,22 +40,24 @@ header img {
 }
 
 .iconH4 {
+    font-style: initial;
     letter-spacing: 1pt;
     font-size: 15px;
     padding: 5px;
 }
 
 footer {
-    background-color: #f7c331;
+    background-color: #6b7a8f;
     border-radius: 3px 3px 15px 15px;
     padding: 10px;
     text-align: center;
-    color: #f0f0f0;
+    color: #f7882f;
     margin: 0 auto;
+    margin-top: 0;
 }
 
 nav {
-    background-color: #dcc7aa;
+    background-color: #f7c331;
     text-align: center;
     box-shadow: 0 2px 15px gray;
     width: 100%;
@@ -91,20 +88,6 @@ nav ul li a {
     align-content: center;
 }
 
-.boxes {
-    box-sizing: border-box;
-    margin: 10px auto;
-    border: 1px dashed #6b7a8f;
-    padding: 15px;
-    display: flex;
-    background-color: #deecf9;
-    color: black;
-    font-style: italic;
-    border-radius: 8px;
-    text-align: center;
-    font-weight: bold;
-}
-
 .navigation li:first-child {
     display: block;
 }
@@ -122,8 +105,8 @@ nav ul li a {
 }
 
 .navigation a:hover {
-    color: white;
-    background-color: #6b7a8f;
+    color: #6b7a8f;
+    background-color: #f7882f;
 }
 
 .responsive li {
@@ -132,13 +115,154 @@ nav ul li a {
 
 p {
     margin: .5px;
-    padding: 6px;
+    font-size: 15px;
     font-family: 'Roboto Mono', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-};
+}
 
 main {
-    font-size: 0.8rem;
-    padding: 15px;
+    padding: 15px 15px 0 15px;
     margin: 0 auto;
     text-align: center;
+}
+
+.bannerdiv {
+    margin: 10px auto;
+    position: relative;
+}
+
+.bannerdiv img {
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.bannerSection {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    flex-wrap: wrap;
+    background: radial-gradient(rgb(182, 183, 189), #D9CAB3);
+    color: white;
+    border: 1px solid #000;
+    padding: 1.5rem;
+    box-shadow: 0 0 30px #111;
+    opacity: .6;
+}
+
+.articlebox img {
+    box-shadow: 0 0 30px #555;
+    padding: .25rem;
+    width: 300px;
+    height: 300px;
+    float: right;
+}
+
+.articlebox {
+    border: 1px solid #6b7a8f;
+    padding: 15px;
+    background-color: #D9CAB3;
+    height: auto;
+    color: black;
+    border-radius: 8px;
+    display: grid;
+    float: left;
+    grid-template-columns: 1fr;
+}
+
+.alert {
+    display: none;
+    text-align: center;
+    padding: 1em;
+    color: white;
+}
+
+.forecastsection {
+    display: none;
+}
+
+.banpic {
+    width: 900px;
+    display: flex;
+}
+
+.active {
+    background-color: #f7882f;
+    color: white;
+    font-weight: bold;
+}
+
+.artimg {
+    width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    min-width: 200px;
+    max-width: 1220px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.flex-item {
+    background-color: #6b7a8f;
+    border: 1px solid #f7c331;
+    margin: 3px;
+    padding: 10px 0 0 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+span {
+    padding-left: 10px;
+    text-align: right;
+}
+
+.flex-container2 {
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 200px;
+    max-width: 1220px;
+    margin-top: 10px;
+    margin-bottom: 0em;
+}
+
+.contactspan {
+    padding-left: 10px;
+    text-align: center;
+    left: -350px;
+    float: right;
+    top: -300px;
+}
+
+.flex-item2 {
+    background-color: #D9CAB3;
+    border: 1px solid #f7c331;
+    margin: 3px;
+    padding: 10px 0 0 10px;
+    padding: 10px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.map {
+    width: 300px;
+    height: 260px;
+    float: left;
+    margin-right: 100px;
+}
+
+.googleicon {
+    width: 90px;
+}
+
+.facebook {
+    width: 100px;
+}
+
+.phone {
+    width: 20px;
+    padding: .3px;
 }
