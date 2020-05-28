@@ -1,136 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Homepage for Preston weather site">
+    <title>Lesson 06- The weather planning site WDD 230 BYUI</title>
     <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../lesson-5/css/normalize.css">
-    <link rel="stylesheet" href="../lesson-5/css/small.css">
-    <link rel="stylesheet" href="../lesson-5/css/medium.css">
-    <link rel="stylesheet" href="../lesson-5/css/large.css">
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Roboto+Mono&display=swap" rel="stylesheet">
-    <title>Best Weathersite</title>
+    <link rel="stylesheet" href="../lesson-6/css/normalize.css">
+    <link rel="stylesheet" href="../lesson-6/css/weather6.css">
+    <link rel="stylesheet" href="../lesson-6/css/medium.css">
+    <link rel="stylesheet" href="../lesson-6/css/large.css">
+
 </head>
+
+
 <body>
-    <aside id="top-popup">
-        <h4>Saturday = Preston Pancakkes in the Park!</h4>
-        <h4>9:00 a.m Saturday at the city park pavillion.</h4>
-    </aside>
+    <div id="alert">
+        <h3>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+        </h3>
+    </div>
     <header>
-        <picture class="icon">
-        <img src="/lesson-5/images/images.png" alt="icon for right weather site" />
+        <picture class="weathericon"> <img src="../lesson04/img/519820-34_Cloud_Snow_Sun-512.png" alt="weathericon">
         </picture>
         <section class="text-headings">
-        <h1>Right Weathersite</h1>
-        <p>The right weather site around. Just see our name!</p>
-        </section>  
+            <h1>Right Weathersite</h1>
+            <div class="iconH4">
+            <p>The right weather site around. Just see our name!</p>
         
+        </div>
+    </section> 
     </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="menusign" href="#">&#9776; Menu</a></li>
+            <li>
+                <a href="#">home</a>
+            </li>
 
-    <nav class="clearfix"> 
-        <button id ="changeSymbol" onclick="toggleMenu()">&#9776; Menu</button>
-        <ul id="primaryNav" class="hide">
-            <li><a href="#">Home</a></li>
-            <li><a class="active" href="preston-5.html">&#171;Preston&#187;</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
-            <li><a href="#">Storm Center</a></li>
-            <li><a href="#">Gallery</a></li>
+            <li><a href="preston-5.html" class="active">Preston</a></li>
+
+            <li>
+                <a href="#">Soda Springs</a>
+            </li>
+            <li>
+                <a href="#">Fish Haven</a>
+            </li>
+            <li>
+                <a href="#">Storm Center</a>
+            </li>
+            <li>
+                <a href="#">Gallery</a>
+            </li>
         </ul>
+
     </nav>
-        <main>
-            <h2>Preston Idaho</h2>
-            <div class="herodiv">
-                <img src="/lesson-5/images/photo-1500076656116-558758c991c1.webp" alt="hero image" />
-                <section class="stats"> 
-                    <p>Currently: <span id="currently">Sunny</span></p>
-                    <p>High: <span id="high">76 &deg;F</span></p>
-                    <p>Wind Chill: <span id="windChill">&deg;F </span></p>
-                    <p>Humidity: <span id="humidity">69% </span></p>
-                    <p>Wind Speed: <span id="windSpeed">5 mph </span></p>
-                </section>
-            </div>
-            <div class="five-day-forecast">
-                <h3>5 Day Forcast</h3>
-                <table class="forecast-table">
-                    <tr><th><span id="day1"></span></th>
-                        <th><span id="day2"></span></th>
-                        <th><span id="day3"></span></th>
-                        <th><span id="day4"></span></th>
-                        <th><span id="day5"></span></th>
-                    </tr>
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="bannerdiv">
+          <img class="banpic" src="/lesson-5/images/photo-1500076656116-558758c991c1.webp" alt="hero image" />
+
+            <section class="bannerSection">
+                <h2>Weather Summary</h2>
+                <p>Currently: <span id="currently">Sunny</span></p>
+                <p>High: <span id="high">76 °F</span></p>
+                <p>Wind Chill: <span id="chill">°F </span></p>
+                <p>Humidity: <span id="humid">69% </span></p>
+                <p>Wind Speed: <span id="windy">5 mph </span></p>
+            </section>
+        </div>
+
+
+        <div class="forecastsection">
+            <h2>5 Day Forecast</h2>
+            <table class="forecasttable">
+                <tr>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                    <th>Sun</th>
+                </tr>
+                <tr>
                     <tr><td><img src="/lesson-5/images/download copy.jpg" alt="sunny icon" />
-                            <p>87&deg;F</p>
-                        </td>
-                        <td><img src="/lesson-5/images/download copy.jpg" alt="sunny icon" />
-                            <p>86&deg;F</p>
-                        </td>
-                        <td><img src="/lesson-5/images/download copy.jpg" alt="sunny icon" />
-                            <p>98&deg;F</p>
-                        </td>
-                        <td><img src="/lesson-5/images/download copy.jpg" alt="sunny icon" />
-                            <p>77&deg;F</p>
-                        </td>
-                        <td><img src="/lesson-5/images/download copy.jpg" alt="sunny icon" />
-                            <p>78&deg;F</p>
-                        </td>
-                    </tr>
-                </table></div>
-            <div class="article"><img src="images/download.jpg" alt="article image" />
-                    <h3>Founders Day in Fresco</h3>
-                    <p><i>by Hunter Covington</i></p>
-                    <p>
-                        I was recently reflecting upon the founders 
-                        day event held at Foundation Park each year. 
-                        I have been taking the festival for granted 
-                        and have not been properly engaging in perhaps 
-                        the most popular community event of the year. 
-                        In response, I contacted Ms. Sharon via email 
-                        and expressed my desire to serve on the event 
-                        committee. Well, you guessed it, the phone rings 
-                        almost immediately and she promptly asks me to 
-                        be the event committee chair. Literally, good 
-                        grief! My appreciation for the years of dedicated, 
-                        generous service of volunteers and sponsors has 
-                        escalated beyond waht I thought I could fell for 
-                        such a thing and<a href="#">continue to full article</a>
-                        <span id="continue">in wikipedia you can do many things such as 
-                            sleeping crying laughing eating and all that. Make sure you
-                            know that this is a place holder for future things to come.
-                        </span>
-                    </p>
+                        <p>87&deg;F</p>
+                    </td>
+                    <td><img src="/lesson-5/images/download copy.jpg" alt="sunny icon" />
+                        <p>86&deg;F</p>
+                    </td>
+                    <td><img src="/lesson-5/images/download copy.jpg" alt="sunny icon" />
+                        <p>98&deg;F</p>
+                    </td>
+                    <td><img src="/lesson-5/images/download copy.jpg" alt="sunny icon" />
+                        <p>77&deg;F</p>
+                    </td>
+                    <td><img src="/lesson-5/images/download copy.jpg" alt="sunny icon" />
+                        <p>78&deg;F</p>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="flex-container">
+
+            <div class="flex-item">
+                <img class="artimg" src="../lesson-5/images/download.jpg" alt="aartimg">
+
+                <h3>Founder Day in Fresco</h3>
+                <h4><i>Hunter Covington</i></h4>
+                I was recently reflecting upon the founders 
+                day event held at Foundation Park each year. 
+                I have been taking the festival for granted 
+                and have not been properly engaging in perhaps 
+                the most popular community event of the year. 
+                In response, I contacted Ms. Sharon via email 
+                and expressed my desire to serve on the event 
+                committee. Well, you guessed it, the phone rings 
+                almost immediately and she promptly asks me to 
+                be the event committee chair. Literally, good 
+                grief! My appreciation for the years of dedicated, 
+                generous service of volunteers and sponsors has 
+                escalated beyond waht I thought I could fell for 
+                such a thing and<a href="#">continue to full article</a>
+                <span id="continue">in wikipedia you can do many things such as 
+                    sleeping crying laughing eating and all that. Make sure you
+                    know that this is a place holder for future things to come.
+            </div>
+        </div>
+
+
+        <div class="flex-container2">
+            <div class="flex-item2">
+
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2619.3830999249035!2d-111.7481644464054!3d40.017690392440585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1573172746972!5m2!1sen!2sus">
+                </iframe>
+                <h3>Contact Info</h3>
+
+                <h3>Right Weather Site</h3>
+                North 1st East Preston,<br>Preston ID 83263<br>
+                <img class="phone" src="/lesson05/img/phone.png" alt="phone"> 999-999-9999
+                <br>Email: Nightstarweather@nightstar.com<br><br>
+                <img class="googleicon" src="img/google.png" alt="mapicon">
 
             </div>
-            <div class="contact-information">
-                <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.
-                72628265554!2d-111.91534447413052!3d42.099805311877674!2m3!1f0!2f0!3f0!3m2!1
-                i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPresto
-                n%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1590094728527!5m2!1sen!2sus" 
-                width="70%" height="80%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                    <section class="right">
-                      <h3>Right Weather Site</h3>
-                      <ul class="contact-address">
-                          <li><i class="fas fa-map-marker-alt"></i> 30 N 1st E</li>
-                          <li>Preston, ID 83263</li>
-                          <li><i class="fas fa-phone-alt"></i> 999.999.9999</li>
-                          <li><i class="fas fa-envelope"></i> rightweathersite002@gmail.com</li>
-                          <img class="googleicon" src="/lesson-5/images/google.png" alt="mapicon">
-                      </ul>
+        </div>
 
-                      <ul class="social-icons">
-                          <li> <i class="fab fa-facebook"></i></li>
-                          <li><i class="fab fa-pinterest"></i></li>
-                          <li>       <i class="fab fa-twitter"></i></li>
-                          <li><i class="fab fa-whatsapp"></i></li>
-                      </ul>
-                </section>
 
-            </div>
-        </main>
 
-        <footer>
-            <p>&copy; Right Weathersite | Attributions | Hunter Covington</p>
+
+
+
+    </main>
+
+    <footer>
+        <p>&copy; Right Weathersite | Attributions | Hunter Covington</p>
             <p><span id="currentDate"></span></p>
 
         </footer>
@@ -138,3 +160,4 @@
     <script src="js/prestonscript.js"></script>
 </body>
 </html>
+
