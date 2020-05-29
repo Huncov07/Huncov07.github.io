@@ -1,13 +1,19 @@
-@media only screen and (min-width: 37.5em) {
+@media screen and (min-width: 32.5em) {
+
+    /*header*/
+    .text-headings h1 {
+        font-size: 2em;;
+    }
+
+    /*main*/ 
     main {
         width: 80%;
     }
-    .boxes {
-        background-color: #E7C24F;
-        align-items: center;
-        color: black;
+    
+    .contentbox {
+        background-color: #acf;
     }
-    .footer {
-        width: 80%;
-    }
+
+
+
 }
