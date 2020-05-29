@@ -7,68 +7,49 @@
     <title>The weather planning site WDD 230 BYUI</title>
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href=".css/medium.css">
     <link rel="stylesheet" href="css/large.css">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Roboto+Mono&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
     <header>
-        <picture class="weathericon"> <img src="../lesson-3/images/weather-cartoon.jpeg/" alt="weathericon">
-        </picture>
-        <section class="headings">
-            <h1>Right Weathersite </h1>
-            <div class="iconH4">
-                Find out where to get the best predictions.
-            </div>
-        </section>
-
-    </header>
-    <nav>
-        <ul class="navigation">
-            <li><a class="menusign" href="#">&#9776; Menu</a></li>
-            <li>
-                <a href="#">home</a>
-            </li>
-            <li>
-                <a href="#">Preston</a>
-            </li>
-            <li>
-                <a href="#">Soda Springs</a>
-            </li>
-            <li>
-                <a href="#">Fish Haven</a>
-            </li>
-            <li>
-                <a href="#">Storm Center</a>
-            </li>
-            <li>
-                <a href="#">Gallery</a>
-            </li>
-        </ul>
-
-    </nav>
-    <main>
-
-        <h1>Preston Idaho</h1>
-        <div class="boxes">Hero w/ Weather summary</div>
-        <div class="boxes">5 day Forecast</div>
-        <div class="boxes">Articles</div>
-        <div class="boxes">Contact Information</div>
-
-
-    </main>
-
-    <footer>
-        <p>
-            Right Weathersite| Attributions | Hunter Covington</p>
-        <span id="update"></span> </footer>
-
-    <script src="/lesson-4/js/preston.script.js"></script>
-
-
-
-</body>
-
-</html>
+        <picture class="icon">
+            <img src="../lesson-5/images/images.png" alt="icon for best weather site" />
+            </picture>
+            <section class="text-headings">
+            <h1>Right Weather Site</h1>
+            <p>The best weather site around. Just see our name!</p>
+            </section>  
+            
+        </header>
+    
+        <nav class="clearfix"> 
+            <button id ="changeSymbol" onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="#">Home</a></li>
+                <li><a href="preston-1.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+            <main>
+                <h2>Preston Idaho</h2>
+                <div class="contentbox">Hero w/ weather summary</div>
+                <div class="contentbox forecast">5 Day Forecast</div>
+                <div class="contentbox">Article</div>
+                <div class="contentbox">Contact Information</div>
+            </main>
+    
+            <footer>
+                <p>&copy; Right Weather Site | Attributions | Hunter Covington</p>
+                <p><span id="currentDate"></span></p>
+    
+            </footer>
+        <script src="js/preston.script.js"></script>
+    </body>
+    </html>
