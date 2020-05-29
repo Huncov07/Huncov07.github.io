@@ -1,18 +1,24 @@
-@media screen and (min-width: 800px) {
-    nav ul { 
+@media only screen and (min-width: 37.5em) {
+    nav ul {
         display: flex;
-     }
-
-    nav ul li { 
+    }
+    nav ul li {
         flex: 1 1 100%;
-     }
-
-     #content {
-        width: 80%;
     }
-
-    header {
-        width: 83%;
+    nav li {
+        float: left;
+        margin-right: 15px;
     }
-
+    main {
+        clear: both;
+    }
+    nav a {
+        font-size: 1rem;
+    }
+    main {
+        grid-template-columns: 1fr;
+    }
+    main picture {
+        display: block;
+    }
 }

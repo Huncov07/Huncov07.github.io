@@ -1,11 +1,10 @@
-@media screen and (min-width: 60em) {
+/* Desktop Views ****************************/
 
-    #content {
-        width: 60%;
+@media only screen and (min-width: 60em) {
+    nav a {
+        font-size: 1.1rem;
     }
-
-    header {
-        width: 65%;
+    main {
+        grid-template-columns: 1fr;
     }
-    
 }
