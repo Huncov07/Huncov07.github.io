@@ -36,7 +36,7 @@ thead tr.special-color {
 /* Go to the 4th row of tbody, then 3rd column. */
 tbody :nth-child(4) :nth-child(3) {
     color: white;
-    background-color: #628ca6;
+    background-color: #e7f0ed;
 }
 
 /* This goes to the 5th row and first column of tbody */
