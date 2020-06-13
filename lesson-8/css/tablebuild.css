@@ -10,7 +10,7 @@ table {
     width: 85%;
     font-family: 'Ubuntu', sans-serif;
     border-collapse: collapse;
-    box-shadow: 15px 15px 15px #6b7a8f;
+    box-shadow: 15px 15px 15px #628ca6;
 }
 
 /* Give padding and border to the header of the table */
@@ -22,7 +22,7 @@ thead th {
 /* Give the background color and color to the rows of the header */
 thead tr {
     font-size: 2em;
-    background-color: #dcc7aa;
+    background-color: #7fb9c2;
     color: black;
 }
 
@@ -30,13 +30,13 @@ thead tr {
 thead tr.special-color {
     font-size: 1.2em;
     color: #e7f0ed;
-    background-color: #6b7a8f;
+    background-color: #628ca6;
 }
 
 /* Go to the 4th row of tbody, then 3rd column. */
 tbody :nth-child(4) :nth-child(3) {
     color: white;
-    background-color: #666666;
+    background-color: #628ca6;
 }
 
 /* This goes to the 5th row and first column of tbody */
@@ -50,7 +50,7 @@ tbody :nth-child(5) :nth-child(2) {
 }
 
 tbody tr:nth-child(odd) {
-    background-color: #f7c331;
+    background-color: #e7ffed;
 }
 
 
@@ -62,7 +62,7 @@ td {
 
 /* this styles the tfoot of the table */
 tfoot td {
-    background-color: #dcc7aa;
+    background-color: #7fb9c2;
     text-align: center;
 }
 
