@@ -19,7 +19,7 @@
     </aside>
     <header>
         <picture class="icon">
-        <img src="../lesson-3/images/weather-cartoon.jpeg" alt="icon for best weather site" />
+        <img src="../lesson-5/images/images.png" alt="icon for best weather site" />
         </picture>
         <section class="text-headings">
         <h1>Right Weathersite</h1>
@@ -40,37 +40,46 @@
         </ul>
     </nav>
         <main>
-            <h2>Storm Center Page</h2>
+            <h2>Report a Storm in your Area</h2>
 
-            <form action="#" method="GET">
-                <div class="form-box">
-                <label for="fullname">Enter your full Name: </label>
-                <input type="text" name="fname" id="fname" required minlength="5" />
-                </div>
+            <form action="thanks.html" method="GET">
+                <!-- This is for Reporter's information -->
+                <fieldset>
+                    <legend>Reporter's Information</legend>
+                
+                <label class="top">Full Name*: <input id="fullnames" type="text" name="fullname" required pattern="[A-Za-z ]+" minlength="5" 
+                    title="You must have your first and last name seperated by a space. for example: James Franko" ></label>
+    
+ 
+                
+                <label class="top">Email: 
+                    <input id="emails" type="email" name="email" placeholder="example@gmail.com" >
+                </label>
+                
 
-                <div class="form-box">
-                <label for="email">Email: </label>
-                <input type="email" name="email" id="email" placeholder="example@gmail.com" >
-                </div>
+                
+                <label class="top">Phone Number: 
+                    <input id="tels" type="tel" name="phone" required placeholder="5458971234">
+                </label>
+     
+                
+                <label class="top">Zipcode: 
+                    <input type="number" name="zipcode" required >
+                </label>
+                
+                </fieldset>
+                
+                <!-- This is for Storm Information -->
+                <fieldset>
+                <legend>Storm Information</legend>
+                
+                <label class="top">Date of Storm: 
+                    <input type="date" name="stormdate" >
+                </label>
 
-                <div class="form-box">
-                <label for="phonenumber">Phone Number: </label>
-                <input type="tel" name="phonenumber" id="pnumber" required />
-                </div>
-
-                <div class="form-box">
-                <label for="zipcode">Zipcode: </label>
-                <input type="number" name="zipcode" id="zipcode" required />
-                </div>
-
-                <div class="form-box"></div>
-                <label for="stormdate">Date of Storm: </label>
-                <input type="date" name="date" id="date" />
-                </div>
-
-                <div class="form-box"></div>
-                <label for="stormtype">Type of Storm: </label>
-                <input list="stormtypes" name="stormtype" id="stormtype" />
+                
+                <label class="top" >Type of Storm: 
+                    <input list="stormtypes" name="stormtype" >
                 <datalist id="stormtypes">
                     <option value="Flash Flood"></option>
                     <option value="Hail"></option>
@@ -78,10 +87,11 @@
                     <option value="Thunderstorm"></option>
                     <option value="Tornado"></option>
                 </datalist>
-                </div>
+            </label>
+                
 
-                <div class="form-box"></div>
-                <label for="stormseverity">Storm Severity:&nbsp; </label>
+                
+                <label class="own" for="rating">Storm Severity (1 to 10): <br>
                 <input list="tickmarks" type="range" value="5" step="1" name="severity" id="rating" min="1" max="10"
                 oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" />
                 <span id="ratingvalue">5</span>
@@ -98,43 +108,42 @@
                     <option value="9"></option>
                     <option value="10"></option>
                 </datalist>    
-            </div>
+                </label>
+                
 
-                <div class="form-box"></div>
-                <label for="stormregion"> Storm Region: </label>
-                <select name="towns" id="towns-select">
-                    <option value="">Select Region</option>
+                
+                <label class="top"> Storm Region: 
+                <select name="towns" >
+                    <option value="">Select Region &#9662;</option>
+                    <option value="Fish Haven">Fish Haven</option>
                     <option value="Preston">Preston</option>
                     <option value="Soda Springs">Soda Springs</option>
-                    <option value="Fish Haven">Fish Haven</option>
+                    
                 </select>
-                </div>
-
-                <div>
-                <div class="form-box"></div>
-                <label for="userindangerlevel">User in-danger level: </label>
+                </label>
                 
-                <input type="radio" id="yes" name="choices" value="Yes">
-                <label for="yes">Yes</label> 
-            
-                <input type="radio" id="maybe" name="choices" value="maybe">
-                <label for="maybe">Maybe</label>
-            
-                <input type="radio" id="no" name="choices" value="no" checked>
-                <label for="no">No</label>
+                </fieldset>
 
-                </div>
-
-                <div class="form-box"></div>
-                <label for="comments">Comments: <textarea></textarea></label>
+                <!-- Additional Information -->
+                <fieldset>
+                    <legend>Additional Information</legend>
                 
-                </div>
+                <div>Are you in danger? </div>
 
-                <div class="form-box">
-                    <input type="submit">
-                </div>
+                <label class="sbs"><input type="radio" name="choices" value="Yes"> Yes </label> 
+            
+                <label class="sbs"><input type="radio" name="choices" value="maybe"> Maybe</label>
+            
+                <label class="sbs"><input type="radio" name="choices" value="no" checked> No</label>
 
+               
 
+                
+                <label class="top">Additional Information or Comments: <textarea rows="10" cols="39" name="comments"></textarea></label>
+                </fieldset>
+                
+                    <input onclick="getInfo()" class="submitBtn" type="submit" value="Report Storm">
+    
             </form>
 
                 
