@@ -6,7 +6,7 @@
 
 section {
     background-color: #D9CAB3;
-    border: solid 2px #f7c331;
+    border: solid 2px #6b7a8f;
     box-shadow: 5px 5px 5px rgb(69, 71, 73);
 }
 
@@ -32,7 +32,7 @@ body {
 /* ---------CSS from SMALL Navagation Footer Header---------------*/
 
 .active {
-    background-color: #f7c331;
+    background-color: #D9CAB3;
     color: white;
     font-weight: bold;
 }
@@ -51,7 +51,7 @@ header {
     align-items: center;
     justify-content: center;
     border-radius: 15px 15px 0 0;
-    color: #f0f0f0;
+    color: #f7882f;
     padding: 15px 0;
     text-align: center;
 }
@@ -83,13 +83,14 @@ footer {
     border-radius: 3px 3px 15px 15px;
     padding: 10px;
     text-align: center;
-    color: #f0f0f0;
+    color: #f7882f;
     margin: 0 auto;
     margin-top: 0;
 }
 
+
 nav {
-    background-color: #f0f0f0;
+    background-color: #f7c331;
     text-align: center;
     box-shadow: 0 2px 15px gray;
     width: 100%;
@@ -137,8 +138,8 @@ nav ul li a {
 }
 
 .navigation a:hover {
-    color: white;
-    background-color: #6b7a8f;
+    color: #6b7a8f;
+    background-color: #f7882f;
 }
 
 .responsive li {
