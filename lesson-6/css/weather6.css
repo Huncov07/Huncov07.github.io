@@ -116,6 +116,7 @@ nav ul li a {
 p {
     margin: .5px;
     font-size: 15px;
+    font-family: 'Lato', sans-serif;
 }
 
 main {
@@ -255,18 +256,13 @@ span {
 
 .googleicon {
     width: 90px;
-    height: 90px;
-    margin-right: 100px;
 }
 
 .facebook {
-    width: 90px;
-    height: 90px;
-    margin-right: 100px;
+    width: 100px;
 }
 
 .phone {
-    width: 30px;
-    height: .3px;
-    margin-right: 100px;
+    width: 20px;
+    padding: .3px;
 }
