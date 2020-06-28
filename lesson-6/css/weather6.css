@@ -116,7 +116,6 @@ nav ul li a {
 p {
     margin: .5px;
     font-size: 15px;
-    font-family: 'Roboto Mono', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 main {
@@ -256,13 +255,18 @@ span {
 
 .googleicon {
     width: 90px;
+    height: 90px;
+    margin-right: 100px;
 }
 
 .facebook {
-    width: 100px;
+    width: 90px;
+    height: 90px;
+    margin-right: 100px;
 }
 
 .phone {
-    width: 20px;
-    padding: .3px;
+    width: 30px;
+    height: .3px;
+    margin-right: 100px;
 }
