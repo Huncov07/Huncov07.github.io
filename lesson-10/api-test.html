@@ -1,22 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API Weather Test| Denise Rebollo</title>
+    <meta name="description" content="Home Page for Best weather site">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../lesson-6/css/normalize.css">
+    <link rel="stylesheet" href="../lesson-6/css/weather6.css">
+    <link rel="stylesheet" href="../lesson-6/css/medium.css">
+    <link rel="stylesheet" href="../lesson-6/css/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Right Weather Site</title>
 </head>
-
 <body>
+    <aside id="top-popup">
+        <h4>Saturday = Preston Pancakes in the Park!</h4>
+        <h4>9:00 a.m Saturday at the city park pavillion.</h4>
+    </aside>
+    <header>
+        <picture class="icon">
+        <img src="/lesson-10/images/images.png" alt="icon for best weather site" />
+        </picture>
+        <section class="text-headings">
+        <h1>Right Weather Site</h1>
+        <p>The right weather site around. Just see our name!</p>
+        </section>  
+        
+    </header>
+
+    <nav class="clearfix"> 
+        <button id ="changeSymbol" onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a class="active" href="index.html">&#171;Home&#187;</a></li>
+            <li><a href="../lesson-6/preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="../lesson-8/stormcenter.html">Storm Center</a></li>
+            <li><a href="../lesson-7/gallary.html">Gallery</a></li>
+        </ul>
+    </nav>
+        <main>
+            <h1>OpenWeatherMap.org API Test</h1>
+            <p>The current temperature in Preston, Idaho is <span id="current-temp"></span>&deg; F</p>
+            <hr>
+            <p>Image Icon Path Test: <span id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon"></p>
 
 
-    <h1>OpenWeatherMap.org API Test</h1>
-    <p>The current temperature in Preston, Idaho is <span id="current-temp"></span>&deg; F</p>
 
-    <hr>
-    <p>Image Icon Path Test: <span id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon"></p>
-    <script src="js/weatherapi.js"></script>
+        </main>
 
+        <footer>
+            <p>&copy; Right Weather Site | Attributions | Hunter Covington </p>
+            <p><span id="currentDate"></span></p>
+
+        </footer>
+        <script src="js/weather.api.js"></script>
+        <script src="../lesson-6/js/preston-script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="../lesson-6/js/webfontload.js"></script>
 </body>
-
 </html>
