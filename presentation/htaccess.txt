@@ -1,4 +1,4 @@
 # this is a Test
 
 #Error Code
-#ErrorDocument design-principles /design-principles.html
+#ErrorDocument errorcode /errorcode.html
