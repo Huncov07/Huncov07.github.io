@@ -16,7 +16,7 @@ p, a {
 }
 
 li, button {
-    font-family: 'Roboto Mono', monospace:
+    font-family: 'Roboto Mono', monospace;
 }
 
 
@@ -29,7 +29,7 @@ h1, h2, h3, h4 {
 
 header {
     background-color:#6b7a8f;
-    color: white;
+    color: black;
     text-align: center;
     margin: 0 auto;
     padding-right: 10px;
@@ -87,7 +87,7 @@ header img{
 }
 
 nav{
-    background: linear-gradient(to bottom, #f7c331 50% , #f7c331 100%);
+    background: linear-gradient(to bottom, #f7c331 50% , #f7882f 100%);
     box-shadow: 0 4px 6px -6px black;
 }
 

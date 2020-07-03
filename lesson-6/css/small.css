@@ -1,318 +1,235 @@
-body {
+*{
+    box-sizing: border-box;
     margin: 0;
-    padding: 0;
+}
+body{
+    font-family: 'Roboto Mono', monospace,
+    
+}
+
+aside{
     background-color: #D9CAB3;
-    font-size: 18px;
-}
-
-
-
-p, a {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-bottom: 15px;
-    font-family: 'Comic Neue', cursive;
-    line-height: 1.5em;
-}
-
-li, button {
-    font-family: 'Comic Neue', cursive;
-}
-
-
-h1, h2, h3, h4 {
-    font-family: 'Roboto Mono', monospace;
-}
-
-
-
-
-header {
-    background-color:#6b7a8f;
-    color: white;
+    padding:1em;
     text-align: center;
-    margin: 0 auto;
-    padding-right: 10px;
+    font-weight: bold;
+    color: #856404;
+}
+
+header{
+    background-color: #6b7a8f;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-}  
-
-
-.text-headings h1 {
-    font-size: 1.5em;
-    margin-bottom: 0;;
+    padding:1em;
 }
 
-
-.text-headings p {
-    font-style: italic;
-    font-size: 0.8em;
-    padding-left: 0;
-    padding-right: 0;
-    margin-top: 10px;
+header img{
+    margin-right: .5em;
 }
 
-
-
-
-nav {
-    background-color: #f7c331;
-    text-align: center;
-    box-shadow: 0 2px 15px gray;
-}
-
-
-nav button {
-    border: none; 
-    font-size: 1.2rem;
-    background-color: #f7c331;
-    padding: 0.8rem;
-    width: 100%;
-    text-align: center;
-    margin: 0;
-}
-
-
-nav button:hover {
-    background-color: #dcc7aa;
-    color: white;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-nav ul li a {
-    padding: 0.8rem;
-    margin: 0;
-    text-decoration: none;
-    display: block;
-    color: black;
-    font-size: 1.2rem;
-    border-top: 1px solid rgba(0,0,0,0.3);
-}
-
-nav ul li a:hover {
-    background-color: #dcc7aa;
-    color: white;
-
-}
-.active {
-    text-decoration: wavy;
-    background-color: #f7882f;
-    color: white;
-    font-weight: bold;
-}
-
-.active:hover {
-    background-color: #dcc7aa;
-}
-    
-
-nav ul.hide {
-    display: none;
-}
-
-
-/*main*/
-main {
-    margin: 0 auto;
-    padding: 0;
-}
-
-main h2 {
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 0;
-}
-
-
-
-
-/*footer*/
-
-footer {
-    margin: 0 auto;
-    padding: 0;
-    background-color: #f7c331;
-    padding: 5px;
-    text-align: center;
-    color: white;
-
-}
-footer a {
-    color: white;
-}
-
-
-/*clearfix*/
-
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-
-/*aside*/
-
-aside {
-    text-align: center;
-    background-color: #E7C24F;
-    padding: 1em;
-    color: white;
-    text-decoration: solid;
-    display: none;
-}
-
-aside h4 {
-    margin: 0;
-}
-
-  /*Hero Div*/
-
-.herodiv {
-    margin: 10px auto;
-    position: relative;
-}
-
-.herodiv img {
-    width: 100%;
-    margin-bottom: 3em;
-}
-
-.stats {
-    position: absolute;
-    top: 1em;
-    left: .8em;
-    padding: 1rem;
-    background: radial-gradient(#f7c331, #D9CAB3);
-    border: 1px solid #f7882f;
-    box-shadow: 0 0 25px #000;
-    opacity: .8;
-}
-
-.stats h2, .stats p {
-    margin: 0;
-    font-size: 1em;
-}
-
-/*five-day-forecast*/
-
-.five-day-forecast {
-    display: none;
-    text-align: center;
-}
-
-.five-day-forecast img {
-    width: 120px;
-}
-
-.forecast-table {
-    border-collapse: collapse;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.forecast-table tr {
-    padding: 1.5em;
-    
-}
-
-.forecast-table p {
-    margin-top: 0;
-}
-
-.forecast-table th {
-    padding: .5em;
-    height: 2em;
-    background-color: #6b7a8f;
-    color: white;
-    border: 2px solid black;
-}
-
-.forecast-table td {
-    border: 2px solid black;
-    height: 2em;
-}
-
-
- /*Article*/
-.article {
-        display: block;
-        margin: 10px auto;
-        border: 1px solid #000;
-        padding: 15px;
-        background-color: #f7c331;
-        box-sizing: border-box;
-}
-
- .article img {
-     border-radius: 5px;
-     box-shadow: 0 0 10px #000;
-     width: 100%;
-
- }
-
- .article p {
-    padding: 0;
-}
-
-.article h3, .article p {
-    margin: .5em 0;
-}
-
-#continue {
-    display: none;
-}
-
-
-/*map frame and contact information*/
-
-.gmap {
-    display: none;
-}
-
-.contact-information {
-        display: block;
-        margin: 10px auto;
-        border: 1px solid #000;
-        padding: 15px;
-        background-color: #f7c331;
-        box-sizing: border-box;
-}
-
-.right {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.right ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.right ul li {
-    padding: .3em;;
-}
-
-.contact-address {
-    margin-bottom: 0;
-}
-
-.social-icons {
-    margin-top: 0;
+.title{
     display: flex;
-    font-size: 2em;
+    flex-direction: column;
+    align-items: center;
 }
 
-/*colors for icons*/
-.fa-map-marker-alt, .fa-pinterest {
-    color: red;
+.title h1{
+    margin:.3em;
+    font-size: 1.5em;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.title h3 {
+    font-size: 0.8em;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 1.5em;
+}
+
+nav{
+    background: linear-gradient(to bottom, #ffc107 50% , #f7882f 100%);
+    box-shadow: 0 4px 6px -6px black;
+}
+
+.navigation{
+    list-style: none;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation li a {
+    display: block;
+    padding: .8rem 2%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.active{
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.appear li {
+    display: block;
+}
+
+main h2{
+    text-align: center;
+    margin-bottom: 1em ;
+    margin-top: 1em;
+}
+
+.hero{
+    position: relative;
+    margin:1em;
+    margin-bottom: 2em;
+}
+
+.hero picture img{
+    width: 100%;
+    border-radius: .8em;
+}
+
+.hero-summary{
+    border: 1px solid #ffc107;
+    position: absolute;
+    color: #fff;
+    top:1em;
+    left:1em;
+    padding: .5em 1em;
+    background-color: rgba(166, 177, 225,.7);
+    text-align: center;
+    line-height: 1.8;
+    font-size: .8em;
+    border-radius: .2em;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15),
+    0 2px 2px rgba(0, 0, 0, 0.15),
+    0 4px 4px rgba(0, 0, 0, 0.15),
+    0 8px 8px rgba(0, 0, 0, 0.15);
+}
+
+.hero-summary h3{
+    border-bottom: 2px solid #fff;
+    margin-bottom: .5em;
+}
+
+.hero-summary p{
+    color: #333;
+    font-style: italic;
+}
+
+.hero-summary p span{
+    color:#054A91;
+    font-weight: 700;
+}
+
+.forecast{
+    display: none;
+}
+
+.blog{
+    background-color: #ffc107;
+    padding: 1em;
+    border-radius: .2em;
+    margin:1em;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15),
+    0 2px 2px rgba(0, 0, 0, 0.15),
+    0 4px 4px rgba(0, 0, 0, 0.15),
+    0 8px 8px rgba(0, 0, 0, 0.15);
+}
+
+.blog h3 {
+    margin: .2em 0;
+}
+
+.blog .author{
+    font-style: italic;
+    color: burlywood;
+    font-size:.7em;
+    margin-bottom: 1em;
+}
+
+.blog img{
+    max-width: 100%;
+    border-radius: .2em;
+    margin: .5em 0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15),
+    0 2px 2px rgba(0, 0, 0, 0.15),
+    0 4px 4px rgba(0, 0, 0, 0.15),
+    0 8px 8px rgba(0, 0, 0, 0.15);
+}
+
+.blog p{
+    font-size: .8em;
+    line-height: 1.8;
+}
+
+.blog a {
+    font-size: .8em;
+    line-height: 1.8;
+    color: #fff;
+}
+
+.contact-info{
+    background-color: #ffc107;
+    margin: 1em 0 0 0;
+    padding: 1em;
+}
+
+.contact-info .map{
+    display: none;
+}
+
+.wrapper-info{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.wrapper-info h3{
+    margin-bottom: .5em;
+}
+
+.wrapper-info p{
+    line-height: 1.5;
+    font-size: .8em;
+}
+
+.wrapper-info .location {
+    margin-bottom: .8em;
+}
+
+.fa-map-marker-alt{
+    color:#F44336;
+}
+
+.wrapper-info ul{
+    list-style: none;
+    margin-top: 1em;
+    padding-left: 0;
+}
+
+.wrapper-info ul li{
+    display: inline;
+    font-size: 2em;
+    margin: 0 .2em;
+}
+
+.fa-facebook {
+    color:#3b5998;
+}
+
+.fa-pinterest{
+    color: #C8232C;
 }
 
 .fa-twitter {
@@ -323,6 +240,19 @@ aside h4 {
     color: #128c7e;
 }
 
-.fa-facebook {
-    color:#3b5998;
+footer{
+    background-color: #6b7a8f;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    line-height: 1.7;
+    font-size: .8em;
+}
+
+footer p:first-child {
+    font-style: italic;
+}
+
+footer p:last-child{
+    font-weight: 300;
 }

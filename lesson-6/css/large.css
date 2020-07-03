@@ -1,80 +1,55 @@
-/* Desktop Views ****************************/
+@media only screen and (min-width: 64rem) {
+    .title h1 {
+        font-size: 2em;
+    }
 
-@media only screen and (min-width: 60em) {
-    header img {
-        width: 100px;
+    .hero {
+        min-height: 20em;
     }
-    .headings h1 {
-        font-size: 3rem;
+
+    .hero-summary {
+        top:2em;
+        left:2em;
+        font-size: 1em;
     }
-    .iconH4 {
-        letter-spacing: 1.5pt;
-        font-size: larger;
-        margin-left: 17px;
+
+    .blog{
+        padding: 2em;
     }
-    nav ul {
-        display: flex;
+    
+    .blog h3 {
+        font-size: 1.5em;
     }
-    .navigation {
-        display: flex;
+
+    .blog img {
+        float:right;
+        max-width: 20em;
+        margin-left: 1em;
     }
-    nav ul li {
-        flex: 1 1 100%;
+
+    .blog p {
+        font-size: 1em;
     }
-    nav a {
-        font-size: 1rem;
+
+    .blog a {
+        font-size: 1em;
     }
-    .navigation li:first-child {
-        display: none;
+    
+    .wrapper-info p {
+        font-size: 1em;
     }
-    .navigation li {
-        display: block;
-        flex: 1 1 auto;
+
+    .wrapper-info ul li {
+        display: inline;
+        font-size: 2em;
+        margin: 0 .2em;
     }
+
     footer {
-        width: 60%;
-    }
-    main {
-        width: 60%;
-    }
-    .forecasttable th {
-        background-color: #D9CAB3;
-        height: 30px;
-        width: 120px;
-        color: white;
-        text-align: center;
-        border: 1px solid black;
-    }
-    .forecasttable td {
-        border: 1px solid black;
-        border-collapse: initial;
-        height: 100px;
-    }
-    .forecasttable img {
-        width: 90px;
-        height: 70px;
-        align-items: center;
-    }
-    table {
-        border-collapse: collapse;
-        margin: auto;
-    }
-    .forecastsection {
-        display: contents;
-        background-color: #6b7a8f;
-        border-radius: 10px;
-    }
-    .h4forecast {
-        display: contents;
-    }
-    .bannerSection {
-        position: absolute;
-    }
-    .artimg {
-        width: 350px;
-        height: 350px;
-        float: right;
-        box-shadow: 0 0 30px #111;
-        top: -50px
+        font-size: 1em;
+        width: 80%;
+        margin: 0 auto;
+        box-shadow: inset 0 0 10px #222;
+        margin-bottom: 1em;
     }
 }
