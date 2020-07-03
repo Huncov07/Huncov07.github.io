@@ -1,4 +1,4 @@
 # this is a Test
 
 #Error Code
-#ErrorDocument errorcode /errorcode.html
+#ErrorDocument errorcode / errorcode.html

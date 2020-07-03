@@ -7,41 +7,48 @@
     <meta name="description" content="Assignment Portal for Hunter Covington">
     <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/size.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Roboto+Mono&display=swap" rel="stylesheet">
-    <title>Hunter Covigton's Assignment Portal</title>
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+ 
 </head>
 <body>
-    <div id="content">
-<header>
-    <h1>Hunter Covington</h1>
-    <img class="myimg" src="img/img_0397.jpg" alt="Hunter and Wendy">
-</header>
-<main>
-     <h2>WDD 230: Assignment Portal</h2>
-    <hr>
-    <ul>
-        <li>Lesson 02: <a target="_blank" href="lesson-2/design-principles.html">Design Principles</a></li>
-        <li>Lesson 03: <a target="_blank" href="lesson-3/index.html">The Weather Plan</a></li>
-        <li>Lesson 04: <a target="_blank" href="lesson-4/preston-1.html">Preston Page</a></li>
-        <li>Lesson 05: <a target="_blank" href="lesson-5/preston-5.html">Preston Town Page</a></li>
-        <li>Lesson 06: <a target="_blank" href="lesson-6/preston-6.html">Responsive images of Preston</a></li>
-        <li>Lesson 07: <a target="_blank" href="lesson-7/lazyload.html">Lazy loading Gallary</a></li> | <a href="lesson-7/gallary.html">Gallery Page</a> </li>
-        <li>Lesson 08: <a href="lesson-8/tablebuild.html">Table Build</a> | <a href="lesson-8/stormcenter.html">Storm Center</a></li>
-        <li>Lesson 09: <a href="/lesson-9/index.html">Home Page</a>| <a href="lesson-9/prophets.html"> Prophets</a></li>
-        <li>Lesson 10: <a href="lesson-10/preston-10.html">Five Day forecast</a>| <a href="lesson-10/api-test.html"> API TEST</a></li>
-        <li><a href="#">Link</a>| <a href="#"> link</a></li>
-
-    </ul>
-</main>
-<footer>
-    <br>
-    <p>&copy;  <span id="currentYear"></span> | Hunter Covington | Riverton, UT | <a target="_blank" href="https://www.byui.edu/online">BYUI Online Learning</a></p>
-    <p>Last Updated: <span id="modifiedDate"></span></p>
-    </footer>
-</div>
-<script src="js/huntercovington.js"></script>
+    <div class="container">
+        <header>
+            <img src="/img/img_0397.jpg" alt="a picture of me">
+            <h1>Hunter Covington</h1>
+    
+        </header>
+        <main>
+            <h2>WDD 230: Assignment Portal</h2>
+            <ul>
+                <li>Lesson 02: <a href="/lesson-2/design.principles.html">Design Principles</a></li>
+                <li>Lesson 03: <a href="/lesson-3/">Website Planning Document</a></li>
+                <li>Lesson 04: <a href="/lesson-4/preston-4.html">Preston Town Page</a></li>
+                <li>Lesson 05: <a href="/lesson-5/preston-5.html">Preston Town Page Continued</a></li>
+                <li>Lesson 06: <a href="/lesson-6/preston-6.html">Preston Town Page Continued II</a></li>
+                <li>Lesson 07: <a href="/lesson-7/lazyload.html">Progressive Loading of Images</a></li>
+                <li>Lesson 07: <a href="/lesson-7-2/gallery-7.html">Gallery</a></li>
+                <li>Lesson 08: <a href="/lesson-8/tablebuild.html">Table Build</a></li>
+                <li>Lesson 08: <a href="/lesson-8/stormcenter.html">Storm Center</a></li>
+                <li>Lesson 09: <a href="/lesson-9/prophets.html">Latter-day Prophets</a></li>
+                <li>Lesson 09: <a href="/lesson-9/index.html">The Weather Site Home Page</a></li>
+                <li>Lesson 10: <a href="/lesson-10/preston-10.html">Preston Weather API</a></li>
+            </ul>
+        </main>
+        <footer>
+            <p>&copy; <span id="currentYear"></span> | Hunter Covington | Riverton, Utah | <a target="_blank"
+                    href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+            <p>Last Updated: <span id="updatedDate"></span></p>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Montserrat:300,400,700']
+                }
+            });
+    </script>
+    <script src="/js/script.js"></script>
 </body>
 </html>
