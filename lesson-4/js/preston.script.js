@@ -1,37 +1,24 @@
-
-let arrayOfday = ["Sunday","Monday","Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-let arrayOfMonth = ["January","February","March", "April", "May", "June", "July",
-                        "August","September","October", "November", "December"];
-
+// Code for get date in a nice format
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 let date = new Date();
-let fullYear = date.getFullYear();
-let date2 = date.getDate();
+let year = date.getFullYear();
+let month = date.getMonth();
+let dateNum = date.getDate();
+let dayNum = date.getDay();
 
-
-    let day;
-    for (let i = 0; i < arrayOfday.length; i++) {
-            if (i == date.getDay()) {
-                day = arrayOfday[i];
-            }
+let day;
+for (let i = 0; i < days.length - 1; i++) {
+    if (i == dayNum) {
+        day = days[i];
     }
-
-    let month;
-    for (let i = 0; i < arrayOfMonth.length; i++) {
-        if (i == date.getMonth()) {
-            month = arrayOfMonth[i];
-        }
 }
 
-document.getElementById("currentDate").innerHTML = day + ", " + date2 + " " + month + " " + fullYear + "."; 
+document.getElementById("currentDate").innerHTML = day + ", " + dateNum + " " + months[month] + " " + year + ".";
 
+// Code for responsive navigation
+const hamButton = document.querySelector('#hamBtn');
+const navigation = document.querySelector('.navigation');
 
-function toggleMenu() {
-    let y = document.getElementById("primaryNav").classList.toggle("hide");
-    let c = document.getElementById("changeSymbol").innerHTML = "&#935; Menu";
-
-    if (y == true) {
-     c = document.getElementById("changeSymbol").innerHTML = "&#9776; Menu";
-    }
-
-}
+hamButton.addEventListener('click', () => { navigation.classList.toggle('appear') }, false);

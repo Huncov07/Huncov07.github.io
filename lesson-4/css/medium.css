@@ -1,19 +1,32 @@
-@media screen and (min-width: 32.5em) {
-
-    /*header*/
-    .text-headings h1 {
-        font-size: 2em;;
+@media only screen and (min-width: 32.5em) {
+    .title h1 {
+        font-size: 1.8em;
+    }
+    .navigation {
+        display: flex;
     }
 
-    /*main*/ 
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+        border-right: 1px solid rgba(0, 0, 0, .1);
+    }
+
+    .navigation li a {
+        text-align: center;
+    }
+
+    .navigation li:last-of-type{
+        border-right:none;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
     main {
-        width: 80%;
+        max-width: 80%;
+        margin: 0 auto;
     }
-    
-    .contentbox {
-        background-color: #acf;
-    }
-
-
 
 }

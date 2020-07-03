@@ -1,25 +1,28 @@
-
-let arrayOfday = ["Sunday","Monday","Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-let arrayOfMonth = ["January","February","March", "April", "May", "June", "July",
-                        "August","September","October", "November", "December"];
-
+// Code for get date in a nice format
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 let date = new Date();
-let fullYear = date.getFullYear();
-let date2 = date.getDate();
-let day = arrayOfday[date.getDay()];
-let month = arrayOfMonth[date.getMonth()];
+let year = date.getFullYear();
+let month = date.getMonth();
+let dateNum = date.getDate();
+let dayNum = date.getDay();
 
-
-document.getElementById("currentDate").innerHTML = day + ", " + date2 + " " + month + " " + fullYear + "."; 
-
-
-function toggleMenu() {
-    let y = document.getElementById("primaryNav").classList.toggle("hide");
-    let c = document.getElementById("changeSymbol").innerHTML = "&#935; Menu";
-
-    if (y == true) {
-     c = document.getElementById("changeSymbol").innerHTML = "&#9776; Menu";
+let day;
+for (let i = 0; i < days.length - 1; i++) {
+    if (i == dayNum) {
+        day = days[i];
     }
+}
+document.getElementById("currentDate").innerHTML = day + ", " + dateNum + " " + months[month] + " " + year + ".";
 
+// Code for responsive navigation
+const hamButton = document.querySelector('#hamBtn');
+const navigation = document.querySelector('.navigation');
+hamButton.addEventListener('click', () => { navigation.classList.toggle('appear') }, false);
+
+// If the actual day is Friday displays the banner
+if (day == "Friday"){
+    let aside = document.getElementById("aside");
+    aside.style.display = "block";
 }
