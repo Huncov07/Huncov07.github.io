@@ -1,66 +1,82 @@
-DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gallery Page for Preston weather site">
-    <link rel="stylesheet" href="../lesson-6/css/normalize.css">
-    <link rel="stylesheet" href="../lesson-6/css/weather6.css">
-    <link rel="stylesheet" href="../lesson-6/css/medium.css">
-    <link rel="stylesheet" href="../lesson-6/css/large.css">
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Roboto+Mono&display=swap" rel="stylesheet">
-    <title>Right Weather site</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Right Weather Site | Home</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta name="author" content="Hunter Covington">
+  <link rel="stylesheet" href="css/normalize.css">
+  <script src="https://kit.fontawesome.com/2bdc0b59cd.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
 </head>
-<body onload="useInfo()">
-    <aside id="top-popup">
-        <h4>Saturday = Preston Pancakes in the Park!</h4>
-        <h4>9:00 a.m Saturday at the city park pavillion.</h4>
-    </aside>
-    <header>
-        <picture class="icon">
-        <img src="../lesson-5/images/images.png" alt="icon for best weather site" />
-        </picture>
-        <section class="text-headings">
-        <h1>Right Weather site</h1>
-        <p>The right weather site around. Just see our name!</p>
-        </section>  
+
+<body>
+  <aside id="aside" style="display: none;">
+    <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+  </aside>
+  <header>
+    <picture>
+        <source media="(max-width: 400px)" srcset="img/small.farm.jpg">
+        <source media="(max-width: 600px)" srcset="img/medium.farm.jpg">
+        <source media="(max-width: 800px)" srcset="img/large.farm.jpg">
+        <img src="img/large.farm.jpg" alt="hero image">
+    </picture>
+    <div class="title">
+      <h1>Right Weather Site</h1>
+      <h3>The right weather site around. Just see our name!</h3>
+    </div>
+  </header>
+  <nav>
+    <ul class="navigation">
+      <li><a href="#" id="hamBtn"><i class="fas fa-bars"></i> Menu</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="stormcenter.html">Storm Center</a></li>
+      <li><a href="#">Gallery</a></li>
+    </ul>
+  </nav>
+    <main>
+        <h2>Thanks for filling out the form!</h2>
+        <p>Your information has been sent.</p>
+        <p>Summary of web form submission</p>
+
+        <p>Your Name: <span id="getName"></span></p>
+        <p>Email Address: <span id="getEmail"></span></p>
+        <p>Case Number: <span id="getCaseNumber"></span></p>
+        <p>Phone Number: <span id="getTel"></span></p>
+        <p>Click <a class="thanks-back" href="stormcenter.html">Here</a> to go back.</p>
+ 
         
-    </header>
+        
+    </main>
 
-    <nav class="clearfix"> 
-        <button id ="changeSymbol" onclick="toggleMenu()">&#9776; Menu</button>
-        <ul id="primaryNav" class="hide">
-            <li><a href="#">Home</a></li>
-            <li><a href="../lesson-6/preston-6.html">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
-            <li><a class="active" href="stormcenter.html">&#171;Storm Center&#187;</a></li>
-            <li><a href="../lesson-7/gallary.html">Gallery</a></li>
-        </ul>
-    </nav>
-        <main>
-            <h2>Thanks for filling out the form!</h2>
-            <p>Your information has been sent.</p>
-            <p>Summary of web form submission</p>
-
-            <p>Your Name: <span id="getName"></span></p>
-            <p>Email Address: <span id="getEmail"></span></p>
-            <p>Case Number: <span id="getCaseNumber"></span></p>
-            <p>Phone Number: <span id="getTel"></span></p>
-            <p>Click <a class="thanks-back" href="stormcenter.html">Here</a> to go back.</p>
-     
-            
-            
-        </main>
-
-        <footer>
-            <p>&copy; Right Weather site | Attributions | Hunter Covington</p>
-            <p><span id="currentDate"></span></p>
-
-        </footer>
-    <script src="js/thanks.js"></script>
-    <script src="../lesson-6/js/preston6script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script src="../lesson-6/js/webloadfront.js"></script>
+    <h2>Storm Center</h2>
+    <div class="message">
+      <p>Thank you for filling out the form and report the event, we apreciate your contribution</p>
+    </div>
+  </main>
+  <footer>
+    <p><i class="far fa-copyright"></i> Right Weather Site | Attributions | Hunter Covington</p>
+    <p><span id="currentDate"></span></p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Roboto Mono:300,400,700']
+      }
+    });
+  </script>
+   <script src="js/thanks.js"></script>
+   <script src="../lesson-6/js/preston6script.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+   <script src="../lesson-6/js/webloadfront.js"></script>
 </body>
+
 </html>

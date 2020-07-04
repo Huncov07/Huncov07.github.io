@@ -69,7 +69,7 @@ nav ul li a{
 }
 
 nav ul li a:hover {
-    background-color:darkgoldenrod;
+    background-color:#D9CAB3;
     color: #fff;
 }
 
@@ -188,7 +188,7 @@ section{
 
 .typography div>h3{
     text-decoration: underline;
-    text-decoration-color: darkgoldenrod;
+    text-decoration-color: black;
     text-decoration-thickness: .2em;
     text-underline-position: under;
 }
@@ -217,7 +217,7 @@ footer a {
 }
 
 footer p:last-of-type {
-    color: #D9CAB3;
+    color: black;
     font-weight: 400;
 }
 
