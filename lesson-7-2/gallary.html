@@ -19,67 +19,84 @@
         <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
     </aside>
     <header>
-        <nav>
-            <ul class="navigation">
-                <li><a class="menusign" href="#">&#9776; Menu</a></li>
-                <li>
-                    <a href="/lesson-9/index.html">home</a>
-                </li>
-    
-                <li><a href="/lesson-6/preston-6.html" class="">Preston</a></li>
-    
-                <li>
-                    <a href="#">Soda Springs</a>
-                </li>
-                <li>
-                    <a href="#">Fish Haven</a>
-                </li>
-                <li>
-                    <a href="/lesson-8/stormcenter.html">Storm Center</a>
-                </li>
-                <li>
-                    <a href="/lesson07/gallary.html" class="active">Gallery</a>
-                </li>
-            </ul>
-    
-        </nav>
+        <picture>
+            <source media="(max-width: 400px)" srcset="img/small.farm.jpg">
+                <source media="(max-width: 600px)" srcset="img/medium.farm.jpg">
+                <source media="(max-width: 800px)" srcset="img/large.farm.jpg">
+                <img src="img/large.farm.jpg" alt="hero image">
+        </picture>
+        <div class="title">
+            <h1>Real Weather Today</h1>
+            <h3>Whenever and Wherever You Need</h3>
+        </div>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" id="hamBtn"><i class="fas fa-bars"></i> Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="gallary.html" class="active">Gallery</a></li>
+        </ul>
     </nav>
     <main>
 
     <main>
-        <h2>Gallery Page</h2>
-
-        <div class="grid">
-            <section> <img src='placeholder.png' data-src='lightningstorm.jpg' alt='Lightening'>
-                <h4>lightning Storm Image</h4>
-            </section>
-
-            <section> <img src='placeholder.png' data-src='mountainside.jpg' alt='Mountainside'>
-                <h4>Mountain Side Image</h4>
-            </section>
-            <section> <img src='placeholder.png' data-src='snowy.jpg' alt='Snowy'>
-                <h4>Snowy Weather Image </h4>
-            </section>
-            <section><img src='placeholder.png' data-src='sunset.jpg' alt='Sunset'>
-                <h4>Sunset Image</h4>
-            </section>
-            <section><img src='placeholder.png' data-src='foggy.jpg' alt='Foggy'>
-                <h4>Foggy Image</h4>
-            </section>
-            <section> <img src='placeholder.png' data-src='windy.jpg' alt='Windy'>
-                <h4>Wind Storm Image</h4>
-            </section>
-            <section> <img src='placeholder.png' data-src='desertrock.jpg' alt='desert'>
-                <h4>Desert Rock Image</h4>
-            </section>
-        </div>
+        <section class="gallery">
+            <h2>Gallery</h2>
+            </div>
+            <div class="card">
+                <img src="images/placeholder.png" 
+                    data-src="images/mountainside.jpg"
+                    alt="landscape with mountains and tourists">
+                <p>Landscape with mountains</p>
+            </div>
+            <div class="card">
+                <img src="images/placeholder.png" 
+                    data-src="images/windy.jpg"
+                    alt="a male tourist looking at mountains">
+                <p>Looking at mountains</p>
+            </div>
+            <div class="card">
+                <img src="images/placeholder.png" 
+                    data-src="images/sunset.jpg"
+                    alt="nature fall foliage branch branches">
+                <p>Nature fall foliage</p>
+            </div>
+            <div class="card">
+                <img src="images/placeholder.png" 
+                    data-src="images/lightningstorm.jpg"
+                    alt="natural forest snow mountainous">
+                <p>Snow mountainous</p>
+            </div>
+            <div class="card">
+                <img src="images/placeholder.png" 
+                    data-src="images/desertrock.jpg" 
+                    alt="Outdoors unites states united">
+                <p>Outdoors</p>
+            </div>
+            <div class="card">
+                <img src="images/placeholder.png" 
+                    data-src="images/snowy.jpg"
+                    alt="Sunset with mountains and clouds">
+                <p>Sunset with mountains</p>
+            </div>
+            <div class="card">
+                <img src="images/placeholder.png" 
+                    data-src="images/foggy.jpg" 
+                    alt="a nice view of forest">
+                <p>A nice view of forest</p>
+            </div>
+        </section>
 
     </main>
 
 
 
 
-    <script src="lazy.js" defer>
+    <script src="script.js" defer>
     </script>
 
 
