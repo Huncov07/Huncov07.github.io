@@ -1,156 +1,151 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>EyeNado | Preston</title>
-    <meta name="description" content="EyeNado - Town of Preston weather and events" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/helper.css" />
-    <link rel="stylesheet" href="css/small.css" />
-    <link rel="stylesheet" href="css/medium.css" />
-    <link rel="stylesheet" href="css/large.css" />
-    <link rel="icon" href="images/tornado.svg" />
-  </head>
-  <body>
-    <div class="container">
-      <aside id="banner">
-        <p>
-          Saturday = Preston Pancake in the Park! <br />9:00 a.m. Saturday at the city park.
-        </p>
-      </aside>
-      <header>
-        <a href="../lesson9/index.html"><img src="images/tornado.svg" alt="Site Logo" /></a>
-        <div>
-          <h1>EyeNado</h1>
-          <small>Keep an eye on your safety!</small>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunter Covington| Home</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="author" content="Christian Soldevilla">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://kit.fontawesome.com/2bdc0b59cd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <aside id="aside" style="display: none;">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </aside>
+    <header>
+        <picture>
+            <source media="(max-width: 799px)" srcset="images/logo96w.png">
+            <source media="(min-width: 800px)" srcset="images/logo128w.png">
+            <img src="../lesson-5/images/images.png" alt="Right Weather Site logo">
+        </picture>
+        <div class="title">
+            <h1>Right Weather Site</h1>
+            <h3>The right weather site around. Just see our name!</h3>
         </div>
-      </header>
-      <nav>
-        <ul id="menu-list">
-          <li id="menu-toggle" onclick="toggleMenu()">&#9776; Menu</li>
-          <li id="home" class="nav-item" onclick="changeNav('home')">
-            <a href="../lesson9/index.html">Home</a>
-          </li>
-          <li id="preston" class="nav-item" onclick="changeNav('preston')">
-            <a href="../lesson10/preston-10.html">Preston</a>
-          </li>
-          <li id="soda" class="nav-item" onclick="changeNav('soda')">
-            <a href="#">Soda Springs</a>
-          </li>
-          <li id="fish" class="nav-item" onclick="changeNav('fish')">
-            <a href="#">Fish Haven</a>
-          </li>
-          <li id="storm" class="nav-item" onclick="changeNav('storm')">
-            <a href="../lesson8/stormcenter.html">Storm Center</a>
-          </li>
-          <li id="gallery" class="nav-item" onclick="changeNav('gallery')">
-            <a href="../lesson7/gallery-7.html">Gallery</a>
-          </li>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" id="hamBtn"><i class="fas fa-bars"></i> Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston-10.html" class="active">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
         </ul>
-      </nav>
-      <main>
+    </nav>
+    <main>
         <h2>Preston Idaho</h2>
-        <div id="hero">
-          <div id="hero-content">
-            <h3>Weather Summary</h3>
-            <hr />
-            <table id="weatherSummary">
-              <tr>
-                <td class="align-right">Currently:</td>
-                <td><span id="currently"></span></td>
-              </tr>
-              <tr>
-                <td class="align-right">Temperature:</td>
-                <td><span id="temp"></span>&#176;F</td>
-              </tr>
-              <tr>
-                <td class="align-right">Wind Speed:</td>
-                <td><span id="windSpeed"></span> mph</td>
-              </tr>
-              <tr>
-                <td class="align-right">Wind Chill:</td>
-                <td><span id="windChill"></span></td>
-              </tr>
-              <tr>
-                <td class="align-right">Humidity:</td>
-                <td><span id="humidity"></span>%</td>
-              </tr>
-            </table>
-          </div>
-          <div id="hero-image">
+        <article class="hero">
             <picture>
-              <source srcset="images/town-3.jpg" media="(min-width:1001px)" />
-              <source srcset="images/town-2.jpg" media="(min-width: 601px)" />
-              <img src="images/town-1.jpg" alt="Banner Image" />
+                <source media="(max-width: 400px)" srcset="images/small.jpg">
+                <source media="(max-width: 600px)" srcset="images/medium.jpg">
+                <source media="(max-width: 800px)" srcset="images/large.jpg">
+                <img src="images/large.jpg" alt="hero image">
             </picture>
-          </div>
-        </div>
-        <section>
-          <h4>5 Day Forecast</h4>
-          <table>
-            <tr class="table-headrow">
-              <th>Wed</th>
-              <th>Thu</th>
-              <th>Fri</th>
-              <th>Sat</th>
-              <th>Sun</th>
-            </tr>
-            <tr id="forecastRow">
-              <!-- JavaScript Feed Here -->
-            </tr>
-          </table>
-        </section>
-        <article>
-          <img src="images/celebrate.jpg" alt="Article Image" />
-          <div class="article-content">
-            <h3>Founders Day Fresco</h3>
-            <small>by Janica Juarez</small>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
+            <div class="hero-summary">
+                <h3>Weather Summary</h3>
+                <p>Currently: <span id="curr"></span></p>
+                <p>High: <span id="tempH"></span>°F</p>
+                <p>Wind Chill: <span id="wChill"></span>°F</p>
+                <p>Humidity: <span id="hum"></span>%</p>
+                <p>Wind Speed: <span id="wSpeed"></span> mph</p>
+            </div>
         </article>
-      </main>
-      <div class="map">
-        <div class="contact">
-          <h3>EyeNado</h3>
-          <ul>
-            <li>
-              <p>
-                1200 Park Ave,<br />
-                Emeryville, CA 94608
-              </p>
-            </li>
-            <li>&#9742; 999.999.9999</li>
-            <li>&#9993; help@eyenado.com</li>
-          </ul>
-        </div>
-        <img src="images/map.jpg" alt="Map Image" />
-      </div>
-      <footer>
-        <div>
-          &copy;
-          <span id="current-year">
-            <!-- JavaScript fill here -->
-          </span>
-          | EyeNado | Samuel Krohn
-        </div>
-        <div class="date-updated">
-          <span id="current-date">
-            <!-- JavaScript fill here -->
-          </span>
-        </div>
-      </footer>
-    </div>
+        <article class="forecast">
+            <h3>5 Day Forecast</h3>
+            <table>
+                <tr>
+                    <th><span id="nameDay1"></span></th>
+                    <th><span id="nameDay2"></span></th>
+                    <th><span id="nameDay3"></span></th>
+                    <th><span id="nameDay4"></span></th>
+                    <th><span id="nameDay5"></span></th>
+                </tr>
+                <tr>
+                  <td><img src="/lesson-5/images/download copy.jpg" alt="weather"><br>89 &deg;F</td>
+                  <td><img src="/lesson-5/images/download copy.jpg" alt="weather2"><br>87 &deg;F</td>
+                  <td><img src="/lesson-5/images/download copy.jpg" alt="weather3"><br>78 &deg;F</td>
+                  <td><img src="/lesson-5/images/download copy.jpg" alt="weather4"><br>75 &deg;F</td>
+                  <td><img src="/lesson-5/images/download copy.jpg" alt="weather5"><br>72 &deg;F</td>
+                </tr>
+                <tr>
+                    <td><span id="tempForecast3"></span>°F</td>
+                    <td><span id="tempForecast11"></span>°F</td>
+                    <td><span id="tempForecast19"></span>°F</td>
+                    <td><span id="tempForecast27"></span>°F</td>
+                    <td><span id="tempForecast35"></span>°F</td>
+                </tr>
+            </table>
+        </article>
+        <article class="blog">
+            <picture>
+              <source media="(max-width: 400px)" srcset="img/small.farm.jpg">
+                <source media="(max-width: 600px)" srcset="img/medium.farm.jpg">
+                <source media="(max-width: 800px)" srcset="img/large.farm.jpg">
+                <img src="img/large.farm.jpg" alt="hero image">
+            </picture>
+            <h3>Founders Day Fresco</h3>
+            <p class="author">by Hunter Covington</p>
+            <p>
+                I was recently reflecting upon the founders 
+                day event held at Foundation Park each year. 
+                I have been taking the festival for granted 
+                and have not been properly engaging in perhaps 
+                the most popular community event of the year. 
+                In response, I contacted Ms. Sharon via email 
+                and expressed my desire to serve on the event 
+                committee. Well, you guessed it, the phone rings 
+                almost immediately and she promptly asks me to 
+                be the event committee chair. Literally, good 
+                grief! My appreciation for the years of dedicated, 
+                generous service of volunteers and sponsors has 
+                escalated beyond waht I thought I could fell for 
+                such a thing and ...
+            </p>
+            <a href="#">continue to full article</a>
+        </article>
+        <article class="contact-info">
+            <iframe class="map" id="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28163.73619399447!2d-111.9033210029279!3d42.10001505535372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1590175225846!5m2!1sen!2sus"
+                width="450" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0">
+            </iframe>
+            <div class="wrapper-info">
+              <h3>Right Weather Site</h3>
+              <div class="location">
+                  <p><i class="fas fa-map-marker-alt"></i> 30 N 1st E</p>
+                  <p>Prenston, ID 83263</p>
+              </div>
+              <p><i class="fas fa-phone-alt"></i> 999.999.999</p>
+              <p><i class="fas fa-envelope"></i> rightweathersite002@gmail.com</p>
+              <ul>
+                  <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></i></li>
+                  <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p><i class="far fa-copyright"></i> Right Weather Site | Attributions | Hunter Covington</p>
+        <p><span id="currentDate"></span></p>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <!-- Local JavaScript File -->
-    <script src="js/script.js"></script>
-  </body>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Roboto Mono:300,400,700']
+            }
+        });
+    </script>
+    <script src="js/api.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
 </html>
-© 2020 GitHub, Inc.

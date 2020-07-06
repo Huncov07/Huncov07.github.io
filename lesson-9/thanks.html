@@ -21,28 +21,44 @@
   <header>
     <picture>
         <source media="(max-width: 400px)" srcset="img/small.farm.jpg">
-            <source media="(max-width: 600px)" srcset="img/medium.farm.jpg">
-            <source media="(max-width: 800px)" srcset="img/large.farm.jpg">
-            <img src="img/large.farm.jpg" alt="hero image">
+        <source media="(max-width: 600px)" srcset="img/medium.farm.jpg">
+        <source media="(max-width: 800px)" srcset="img/large.farm.jpg">
+        <img src="img/large.farm.jpg" alt="hero image">
     </picture>
     <div class="title">
       <h1>Right Weather Site</h1>
-      <h3>Whenever and Wherever You Need</h3>
+      <h3>The right weather site around. Just see our name!</h3>
     </div>
   </header>
   <nav>
     <ul class="navigation">
       <li><a href="#" id="hamBtn"><i class="fas fa-bars"></i> Menu</a></li>
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="preston-6.html" >Preston</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Preston</a></li>
       <li><a href="#">Soda Springs</a></li>
       <li><a href="#">Fish Haven</a></li>
       <li><a href="stormcenter.html">Storm Center</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="#">Gallery</a></li>
     </ul>
   </nav>
-  <main>
-    <div class="cards">
+    <main>
+        <h2>Thanks for filling out the form!</h2>
+        <p>Your information has been sent.</p>
+        <p>Summary of web form submission</p>
+
+        <p>Your Name: <span id="getName"></span></p>
+        <p>Email Address: <span id="getEmail"></span></p>
+        <p>Case Number: <span id="getCaseNumber"></span></p>
+        <p>Phone Number: <span id="getTel"></span></p>
+        <p>Click <a class="thanks-back" href="stormcenter.html">Here</a> to go back.</p>
+ 
+        
+        
+    </main>
+
+    <h2>Storm Center</h2>
+    <div class="message">
+      <p>Thank you for filling out the form and report the event, we apreciate your contribution</p>
     </div>
   </main>
   <footer>
@@ -57,7 +73,10 @@
       }
     });
   </script>
-  <script src="js/scripts.js"></script>
+   <script src="js/thanks.js"></script>
+   <script src="../lesson-6/js/preston6script.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+   <script src="../lesson-6/js/webloadfront.js"></script>
 </body>
 
 </html>
