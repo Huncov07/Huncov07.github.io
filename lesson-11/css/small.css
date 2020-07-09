@@ -23,11 +23,8 @@ header {
 }
 
 header img {
-	margin: 0 auto;
-	height: 350px;
-	margin-right: 5px;
-	margin-bottom: 15px;
-	box-shadow: 5px 5px 5px rgb(69, 71, 73);
+	margin-right: 0.5em;
+	background-size: cover;
 }
 
 .title {
