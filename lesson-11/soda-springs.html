@@ -38,11 +38,13 @@
     </nav>
     <main>
         <h2>Soda Springs</h2>
-        <article class="hero">
-            <picture>
-                <picture class="weathericon"> <img src="../lesson-5/images/images.png" alt="weathericon">
-            </picture>
-            <div class="hero-summary">
+        <picture>
+            <source srcset="/lesson-11/images/small.farm2.jpg" media="(max-width: 33.5em)">
+            <source srcset="/lesson-11/images/medium.farm2.jpg" media="(max-width:57.5em)">
+            <img src="/lesson-11/images/large.farm2.jpg" class="Image " alt="Preston ">
+
+        </picture>
+        <div class="bannerSection">
                 <h3>Weather Summary</h3>
                 <p>Currently: <span id="curr"></span></p>
                 <p>High: <span id="tempH"></span>°F</p>
