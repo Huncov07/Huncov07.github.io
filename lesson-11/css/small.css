@@ -29,6 +29,22 @@ header img {
 	margin-bottom: 15px;
 	box-shadow: 5px 5px 5px rgb(69, 71, 73);
 }
+.star {
+	grid-template-columns: 1fr;
+	padding: 20px;
+	margin-bottom: 30px;
+	text-align: center;
+	grid-gap: 20px;
+}
+
+.star h2 {
+	font-size: 22px;
+}
+
+.star img {
+	box-shadow: 5px 5px 5px burlywood;
+	width: 100%;
+}
 
 .title {
 	display: flex;
