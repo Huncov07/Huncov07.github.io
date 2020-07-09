@@ -139,7 +139,7 @@ footer {
 }
 
 footer p:first-child {
-	font-style: italic;
+	font-style: initial;
 }
 
 footer p:last-child {
