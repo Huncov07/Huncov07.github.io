@@ -1,55 +1,56 @@
-body{
-    background-color: #6b7a8f;
-    font-family: 'Roboto Mono', monospace;;
-    padding: 1em;
+body {
+  background-color: #6b7a8f;
+  font-family: "Roboto Mono", monospace;
+  padding: 1em;
 }
 
 .container {
-    max-width:90%;
-    margin: 0 auto;
-    background-color: #eee;
-    border-radius: 1.2em;
-    box-shadow: 0 3px 3px rgba(4, 5, 5, .4);
+  max-width: 90%;
+  margin: 0 auto;
+  background-color: #eee;
+  border-radius: 1.2em;
+  box-shadow: 0 3px 3px rgba(4, 5, 5, 0.4);
 }
 
-header,footer{
-    background-color:#f7c331;
-    color: black;
-    text-align: center;
-    padding: .5em;
-    border-radius: .8em;
-    text-shadow: 0 3px 3px rgba(4, 3, 3, .5);
+header,
+footer {
+  background-color: #f7c331;
+  color: black;
+  text-align: center;
+  padding: 0.5em;
+  border-radius: 0.8em;
+  text-shadow: 0 3px 3px rgba(4, 3, 3, 0.5);
 }
 
-header img{
-    float: none;
-    max-width: 9em;
-    box-shadow: 0 3px 3px rgba(3, 3, 3, .4);
+header img {
+  float: none;
+  max-width: 9em;
+  box-shadow: 0 3px 3px rgba(3, 3, 3, 0.4);
 }
 
-header h1{
-    margin:0;
-    font-size: 1.8em;
+header h1 {
+  margin: 0;
+  font-size: 1.8em;
 }
 
-main{
-    padding: 1em;
+main {
+  padding: 1em;
 }
 
-main h2{
-    border-bottom: 2px solid #6b7a8f;
-    font-size: 1.2em;
+main h2 {
+  border-bottom: 2px solid #6b7a8f;
+  font-size: 1.2em;
 }
 
-main ul li{
-    line-height: 1.8;
+main ul li {
+  line-height: 1.8;
 }
 
-footer a{
-    color: #fff;
+footer a {
+  color: #fff;
 }
 
-footer p:last-of-type{
-    color: #D9CAB3;
-    font-weight: 400;
+footer p:last-of-type {
+  color: #d9cab3;
+  font-weight: 400;
 }
