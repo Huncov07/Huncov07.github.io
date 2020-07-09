@@ -4,10 +4,11 @@
 }
 body {
 	font-family: "Roboto Mono", monospace;
+	background-color: beige;
 }
 
 aside {
-	background-color: #d9cab3;
+	background-color: #ffc107;
 	padding: 1em;
 	text-align: center;
 	font-weight: bold;
@@ -16,7 +17,7 @@ aside {
 
 header {
 	background-color: #6b7a8f;
-	color: black;
+	color: white;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -100,7 +101,7 @@ main h2 {
 }
 
 .hero-summary {
-	border: 1px solid #ffc107;
+	border: 1px solid #6b7a8f;
 	position: absolute;
 	color: #fff;
 	top: 1em;
@@ -134,6 +135,11 @@ main h2 {
 	display: none;
 }
 
+.forecast table {
+	background-color: #fff;
+	border-collapse: collapse;
+}
+
 .blog {
 	background-color: #ffc107;
 	padding: 1em;
@@ -149,7 +155,7 @@ main h2 {
 
 .blog .author {
 	font-style: italic;
-	color: burlywood;
+	color: #f7882f;
 	font-size: 0.7em;
 	margin-bottom: 1em;
 }
@@ -173,8 +179,32 @@ main h2 {
 	color: #fff;
 }
 
+.events {
+	background-color: #6b7a8f;
+	padding: 1em;
+	border-radius: 0.2em;
+	margin: 1em;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+		0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+}
+
+.events h3 {
+	text-align: center;
+	padding-bottom: 1em;
+	border-bottom: 2px solid #ffc107;
+	color: #496f5d;
+}
+
+.events ul {
+	text-align: center;
+	margin-top: 0.5em;
+	line-height: 1.8;
+	padding: 0;
+	list-style: circle;
+}
+
 .contact-info {
-	background-color: #ffc107;
+	background-color: #6b7a8f;
 	margin: 1em 0 0 0;
 	padding: 1em;
 }
@@ -233,6 +263,159 @@ main h2 {
 	color: #128c7e;
 }
 
+/****** storm center styles *****/
+form {
+	border-radius: 0.4em;
+	background-color: rgba(0, 0, 0, 0.1);
+	margin: 0.5em 1em;
+	display: flex;
+	flex-direction: column;
+	padding: 1em;
+}
+
+.input-box {
+	margin-bottom: 1em;
+	width: 100%;
+}
+
+label,
+legend {
+	font-weight: bold;
+}
+
+.input-box textarea,
+.input-box input,
+.input-box select {
+	width: 100%;
+	display: block;
+	padding: 0.5em;
+	margin: 0.5em 0;
+	border-radius: 0.5em;
+}
+
+fieldset {
+	margin-bottom: 1em;
+	border-radius: 0.5em;
+	border: dashed 1.5px #fff;
+}
+
+.radio {
+	display: block;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.radio input {
+	display: inline-block;
+	margin-top: 0.8em;
+}
+
+.radio > label {
+	font-weight: normal;
+}
+
+#range {
+	display: flex;
+}
+
+#ratingvalue {
+	margin: 0.5em 0.2em 0.5em 1em;
+}
+
+.send {
+	padding: 0.5em;
+	border: none;
+	border-radius: 0.5em;
+	background-color: #f7882f;
+	color: white;
+	font-weight: bold;
+	box-shadow: 2px 2px 2px #555;
+	cursor: pointer;
+}
+
+.message {
+	width: 80%;
+	margin: 1em auto;
+	color: #444;
+	font-weight: bold;
+	text-align: center;
+	background-color: #6b7a8f;
+	padding: 2em;
+	margin-bottom: 5em;
+	border-radius: 0.2em;
+	box-shadow: 3px 3px 3px #555;
+}
+
+/******** Gallery tyles ******/
+.gallery {
+	display: flex;
+	flex-direction: column;
+}
+
+.card {
+	background-color: #fff;
+	border-radius: 0.2em;
+	max-width: 100%;
+	margin: 1em 0.5em;
+	padding: 0.5em;
+	box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.card:first-of-type {
+	margin-top: 0;
+}
+
+.card img {
+	width: 100%;
+}
+
+img[data-src] {
+	filter: blur(0.1em);
+}
+
+img {
+	filter: blur(0em);
+	transition: filter 0.2s;
+}
+
+.card p {
+	text-align: center;
+	padding: 0.5em;
+}
+
+/********  index styles *********/
+.cards section {
+	background-color: #ffc107;
+	border-radius: 0.5em;
+	padding: 1em;
+	margin: 1em;
+	text-align: center;
+	box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.cards section h2 {
+	font-size: 2em;
+	margin-bottom: 0.1em;
+	text-shadow: 2px 2px 2px #555;
+	color: #333;
+	margin-top: 0;
+}
+
+.cards section h4 {
+	margin-bottom: 0.8em;
+	color: #333;
+}
+
+.cards section p {
+	line-height: 1.5;
+}
+
+.cards section img {
+	width: 80%;
+	border-radius: 0.5em;
+	margin: 0.5em 0;
+}
+
 footer {
 	background-color: #6b7a8f;
 	color: white;
@@ -240,10 +423,11 @@ footer {
 	text-align: center;
 	line-height: 1.7;
 	font-size: 0.8em;
+	margin-bottom: 0;
 }
 
 footer p:first-child {
-	font-style: italic;
+	font-style: initial;
 }
 
 footer p:last-child {
