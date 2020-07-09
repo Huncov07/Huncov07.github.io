@@ -1,26 +1,20 @@
-body {
-	/* This has to be same as the text-shadows below */
-	background: #def;
+.picture-frame {
+	vertical-align: top;
+	display: inline-block;
+	text-align: center;
 }
-h1 {
-	font-family: Helvetica, Arial, sans-serif;
-	font-weight: bold;
-	font-size: 6em;
-	line-height: 1em;
+
+.picture-frame.px125 {
+	width: 125px;
+	height: 125px;
+	line-height: 125px;
 }
-.inset-text {
-	/* Shadows are visible under slightly transparent text color */
-	color: rgba(10, 60, 150, 0.8);
-	text-shadow: 1px 4px 6px #def, 0 0 0 #000, 1px 4px 6px #def;
-}
-/* Don't show shadows when selecting text */
-::-moz-selection {
-	background: #5af;
-	color: #fff;
-	text-shadow: none;
-}
-::selection {
-	background: #5af;
-	color: #fff;
-	text-shadow: none;
+
+.picture-frame img {
+	margin-top: -4px; /* Inline images have a slight offset for some reason when positioned using vertical-align */
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+	border: 0; /* Remove border on images enclosed in anchors in Internet Explorer */
 }
