@@ -1,6 +1,5 @@
 body {
-	font-size: 16ex;
-	margin: 0 auto;
+	font-size: 16px;
 	font-family: "Montserrat", sans-serif;
 	background-color: beige;
 }
@@ -127,104 +126,6 @@ img {
 	padding: 0.5em;
 }
 
-.articlebox img {
-	box-shadow: 0 0 30px #555;
-	padding: 0.25rem;
-	width: 300px;
-	height: 300px;
-	float: right;
-}
-
-.articlebox {
-	border: solid 2px #ffc107;
-	padding: 15px;
-	background-color: #f7882f;
-	box-shadow: 5px 5px 5px black;
-	height: auto;
-	color: black;
-	border-radius: 8px;
-	display: grid;
-	float: left;
-	grid-template-columns: 1fr;
-}
-
-.forecastsection {
-	display: none;
-}
-
-.banpic {
-	width: 900px;
-	display: flex;
-}
-
-.active {
-	background-color: #6b7a8f;
-	color: white;
-	font-weight: bold;
-}
-
-.artimg {
-	width: 100%;
-}
-
-.flex-container {
-	display: flex;
-	flex-direction: column-reverse;
-	flex-wrap: wrap;
-	max-width: 1220px;
-	text-align: left;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-.flex-container2 {
-	max-width: 1220px;
-	text-align: left;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-.flex-item {
-	background-color: #ffc107;
-	box-shadow: 5px 5px 5px rgb(69, 71, 73);
-	border: solid 2px #f7882f;
-	margin: 3px;
-	padding: 10px 0 0 10px;
-	padding: 10px;
-	border-radius: 6px;
-}
-
-span {
-	padding-left: 10px;
-	text-align: right;
-}
-
-.contactspan {
-	padding-left: 10px;
-	text-align: center;
-	left: -350px;
-	float: right;
-	top: -300px;
-}
-
-.flex-item2 {
-	background-color: #ffc107;
-	border: solid 2px #f7882f;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-gap: 10px;
-	box-shadow: 5px 5px 5px rgb(69, 71, 73);
-	margin: 3px;
-	padding: 10px 0 0 10px;
-	padding: 10px;
-	text-align: left;
-	border-radius: 6px;
-}
-
-.flex-item2 .prestonlocation {
-	box-shadow: 4px 4px 3px rgb(69, 71, 73);
-	text-align: center;
-}
 footer {
 	background-color: #6b7a8f;
 	color: white;
