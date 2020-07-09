@@ -38,39 +38,40 @@
     </nav>
     <main>
         <h2>Preston Idaho</h2>
-        <article class="hero">
+        <div class="bannerdiv">
             <picture>
-                 <source media="(max-width: 400px)" srcset="img/small.farm.jpg">
-                <source media="(max-width: 600px)" srcset="img/medium.farm.jpg">
-                <source media="(max-width: 800px)" srcset="img/large.farm.jpg">
-                <img src="img/large.farm.jpg" alt="hero image">>
+                <source srcset="/lesson-11/images/small.farm2.jpg" media="(max-width: 33.5em)">
+                <source srcset="/lesson-11/images/medium.farm2.jpg" media="(max-width:57.5em)">
+                <img src="/lesson-11/images/large.farm2.jpg" class="Image " alt="Preston ">
+
             </picture>
-            <div class="hero-summary">
-                <h3>Weather Summary</h3>
-                <p>Currently: <span id="curr"></span></p>
-                <p>High: <span id="tempH"></span>°F</p>
-                <p>Wind Chill: <span id="wChill"></span>°F</p>
-                <p>Humidity: <span id="hum"></span>%</p>
-                <p>Wind Speed: <span id="wSpeed"></span> mph</p>
+            <div class="bannerSection">
+                <h3 class="h2banner">Weather Summary</h3>
+                <p>Currently:<span id="currently"></span></p>
+                <p>High:<span id="high"></span></p>
+                <p>Wind Chill:<span id="windchill"></span></p>
+                <p>Humidity:<span id="humid"></span></p>
+                <p>Wind Speed:<span id="windspeed"></span></p>
             </div>
-        </article>
-        <article class="forecast">
-            <h3>5 Day Forecast</h3>
-            <table>
+        </div>
+
+        <div class="forecastsection">
+            <h2>5 Day Forecast</h2>
+            <table class="forecasttable">
                 <tr>
-                    <th><span id="nameDay1"></span></th>
-                    <th><span id="nameDay2"></span></th>
-                    <th><span id="nameDay3"></span></th>
-                    <th><span id="nameDay4"></span></th>
-                    <th><span id="nameDay5"></span></th>
+                    <th><span id="dayofweek6"></span></th>
+                    <th><span id="dayofweek14"></span> </th>
+                    <th><span id="dayofweek22"></span> </th>
+                    <th><span id="dayofweek30"></span> </th>
+                    <th><span id="dayofweek38"></span> </th>
                 </tr>
                 <tr>
-                    <td><img src="/lesson-5/images/download-copy.jpg" alt="weather"><br>89 &deg;F</td>
-                    <td><img src="/lesson-5/images/download-copy.jpg" alt="weather2"><br>87 &deg;F</td>
-                    <td><img src="/lesson-5/images/download-copy.jpg" alt="weather3"><br>78 &deg;F</td>
-                    <td><img src="/lesson-5/images/download-copy.jpg" alt="weather4"><br>75 &deg;F</td>
-                    <td><img src="/lesson-5/images/download-copy.jpg" alt="weather5"><br>72 &deg;F</td>
-                </tr>
+                   
+                    <td> <br> &nbsp;<img src="/lesson-11/images/placeholder.png" alt="placeholder" id="icon6"><br> <span id="forecast6"></span>&deg; F</td>
+                    <td> <br> &nbsp;<img src="/lesson-11/images/placeholder.png" alt="placeholder" id="icon14"> <br><span id="forecast14"></span>&deg; F</td>
+                    <td> <br> &nbsp;<img src="/lesson-11/images/placeholder.png" alt="placeholder" id="icon22"> <br><span id="forecast22"></span>&deg; F</td>
+                    <td> <br> &nbsp;<img src="/lesson-11/images/placeholder.png" alt="placeholder" id="icon30"> <br><span id="forecast30"></span>&deg; F</td>
+                    <td> <br> &nbsp;<img src="/lesson-11/images/placeholder.png" alt="placeholder" id="icon38"> <br><span id="forecast38"></span>&deg; F</td>                </tr>
                 <tr>
                     <td><span id="tempForecast3"></span>°F</td>
                     <td><span id="tempForecast11"></span>°F</td>
@@ -79,13 +80,19 @@
                     <td><span id="tempForecast35"></span>°F</td>
                 </tr>
             </table>
-        </article>
-        <article class="blog">
-            <picture>
-                <source media="(max-width: 799px)" srcset="images/download.jpg">
-                <source media="(min-width: 800px)" srcset="images/download.jpg">
-                <img src="images/download.jpg" alt="a picture of community meeting">
-            </picture>
+            <span id="imagesrc"></span>
+        </div>
+        <section class="newCard">
+            <h2>Upcoming Events:</h2>
+
+
+        </section>
+
+        <div class="flex-container">
+
+            <div class="flex-item">
+                <img class="artimg" src="/lesson-11/images/download.jpg" alt="artimg">
+
             <h3>Founders Day Fresco</h3>
             <p class="author">by Hunter Covington</p>
             <p>
