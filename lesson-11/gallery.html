@@ -13,19 +13,23 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
 </head>
+<title>Right Weather site</title>
+</head>
 
 <body>
-    <aside id="aside" style="display: none;">
-        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    <aside id="top-popup">
+        <h4>Saturday = Preston Pancakes in the Park!</h4>
+        <h4>9:00 a.m Saturday at the city park pavillion.</h4>
     </aside>
+    </div>
     <header>
         <picture>
             <picture class="weathericon"> <img src="../lesson-5/images/images.png" alt="weathericon">
             </picture>
-        <div class="title">
-            <h1>Right Weather Site</h1>
-            <h3>The right weather site around. Just see our name!</h3>
-        </div>
+            <div class="title">
+                <h1>Right Weather Site</h1>
+                <h3>The right weather site around. Just see our name!</h3>
+            </div>
     </header>
     <nav>
         <ul class="navigation">
@@ -33,9 +37,9 @@
             <li>
                 <a href="/lesson-11/index.html" class="active">home</a>
             </li>
-      
+
             <li><a href="/lesson-11/preston.html">Preston</a></li>
-      
+
             <li>
                 <a href="/lesson-11/soda-springs.html">Soda Springs</a>
             </li>
@@ -50,33 +54,40 @@
             </li>
         </ul>
     </nav>
-    <main>
+
 
     <main>
         <h2>Gallery Page</h2>
 
         <div class="grid">
-            <article class="gallerypic"> <img src='../lesson-11/images/placeholder.png' data-src='lesson-11/images/weatherimg1.png' alt='desert'>
+            <article class="gallerypic"> <img src='../lesson-11/images/placeholder.png'
+                    data-src='lesson-11/images/weatherimg1.png' alt='desert'>
                 <h4>Desert Rock Image</h4>
             </article>
 
-            <article class="gallerypic"> <img src='../lesson-11/images/placeholder.png' data-src='lesson-11/images/weatherimg2.png' alt='weather'>
+            <article class="gallerypic"> <img src='../lesson-11/images/placeholder.png'
+                    data-src='lesson-11/images/weatherimg2.png' alt='weather'>
                 <h4>Weather Scenery Image</h4>
             </article>
-            <article class="gallerypic"> <img src='../lesson-11/images/placeholder.png' data-src='lesson-11/images/weatherimg3.png' alt='foggy'>
+            <article class="gallerypic"> <img src='../lesson-11/images/placeholder.png'
+                    data-src='lesson-11/images/weatherimg3.png' alt='foggy'>
                 <h4>Foggy Weather Image </h4>
             </article>
-            <article class="gallerypic"> <img src='../lesson-11/images/placeholder.png' data-src='lesson-11/images/weatherimg4.png' alt='lightening'>
+            <article class="gallerypic"> <img src='../lesson-11/images/placeholder.png'
+                    data-src='lesson-11/images/weatherimg4.png' alt='lightening'>
                 <h4>Lightening Image</h4>
             </article>
-            <article class="gallerypic"> <img src='../lesson-11/images/placeholder.png' data-src='lesson-11/images/weatherimg5.png' alt='mountainside'>
+            <article class="gallerypic"> <img src='../lesson-11/images/placeholder.png'
+                    data-src='lesson-11/images/weatherimg5.png' alt='mountainside'>
                 <h4>Mountainside image</h4>
             </article>
-            <article class="gallerypic"> <img src='../lesson-11/images/placeholder.png' data-src='lesson-11/images/weatherimg6.png' alt='snowy'>
+            <article class="gallerypic"> <img src='../lesson-11/images/placeholder.png'
+                    data-src='lesson-11/images/weatherimg6.png' alt='snowy'>
                 <h4>Snowy Image</h4>
             </article>
-            <article class="gallerypic"> <img src='../lesson-11/images/placeholder.png' data-src='lesson-11/images/weatherimg7.png' alt='sunset'>
-                <h4>Sinset Image</h4>
+            <article class="gallerypic"> <img src='../lesson-11/images/placeholder.png'
+                    data-src='lesson-11/images/weatherimg7.png' alt='sunset'>
+                <h4>Sunset Image</h4>
             </article>
 
         </div>
@@ -86,23 +97,20 @@
 
 
 
-    <script src="script.js" defer>
+
+    <footer>
+        <p><i class="far fa-copyright"></i> Right Weather Site | Attributions | Hunter Covington</p>
+        <p><span id="currentDate"></span></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Roboto Mono:300,400,700']
+            }
+        });
     </script>
-
-
-<footer>
-    <p><i class="far fa-copyright"></i> Right Weather Site | Attributions | Hunter Covington</p>
-    <p><span id="currentDate"></span></p>
-</footer>
-<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-<script>
-    WebFont.load({
-        google: {
-            families: ['Roboto Mono:300,400,700']
-        }
-    });
-</script>
-<script src="js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
