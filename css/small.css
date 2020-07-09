@@ -1,56 +1,56 @@
 body {
-  background-color: #6b7a8f;
-  font-family: "Roboto Mono", monospace;
-  padding: 1em;
+	background-color: #6b7a8f;
+	font-family: "Roboto Mono", monospace;
+	padding: 1em;
 }
 
 .container {
-  max-width: 90%;
-  margin: 0 auto;
-  background-color: #eee;
-  border-radius: 1.2em;
-  box-shadow: 0 3px 3px rgba(4, 5, 5, 0.4);
+	max-width: 90%;
+	margin: 0 auto;
+	background-color: #eee;
+	border-radius: 1.2em;
+	box-shadow: 0 3px 3px rgba(4, 5, 5, 0.4);
 }
 
 header,
 footer {
-  background-color: #f7c331;
-  color: black;
-  text-align: center;
-  padding: 0.5em;
-  border-radius: 0.8em;
-  text-shadow: 0 3px 3px rgba(4, 3, 3, 0.5);
+	background-color: #f7c331;
+	color: black;
+	text-align: center;
+	padding: 0.5em;
+	border-radius: 0.8em;
+	text-shadow: 0 3px 3px rgba(4, 3, 3, 0.5);
 }
 
 header img {
-  float: none;
-  max-width: 9em;
-  box-shadow: 0 3px 3px rgba(3, 3, 3, 0.4);
+	float: none;
+	max-width: 9em;
+	box-shadow: 0 3px 3px rgba(3, 3, 3, 0.4);
 }
 
 header h1 {
-  margin: 0;
-  font-size: 1.8em;
+	margin: 0;
+	font-size: 1.8em;
 }
 
 main {
-  padding: 1em;
+	padding: 1em;
 }
 
 main h2 {
-  border-bottom: 2px solid #6b7a8f;
-  font-size: 1.2em;
+	border-bottom: 2px solid #6b7a8f;
+	font-size: 1.2em;
 }
 
 main ul li {
-  line-height: 1.8;
+	line-height: 1.8;
 }
 
 footer a {
-  color: #fff;
+	color: #fff;
 }
 
 footer p:last-of-type {
-  color: #d9cab3;
-  font-weight: 400;
+	color: #d9cab3;
+	font-weight: 400;
 }

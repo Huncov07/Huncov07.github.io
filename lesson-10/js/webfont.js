@@ -1,5 +1,5 @@
 WebFont.load({
-    google: {
-        families: ['Acme']
-    }
+	google: {
+		families: ["Acme"],
+	},
 });

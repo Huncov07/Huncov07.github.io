@@ -1,35 +1,38 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=8ef3acee6058752fb9adc42140902cd6&units=imperial";
+const apiURL =
+	"https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=8ef3acee6058752fb9adc42140902cd6&units=imperial";
 fetch(apiURL)
-    .then((response) => response.json())
-    .then((jsObject) => {
-        console.log(jsObject);
+	.then((response) => response.json())
+	.then((jsObject) => {
+		console.log(jsObject);
 
-        const fivedayforecast = jsObject.list.filter(x => x.dt_txt.includes('12:00:00'));
+		const fivedayforecast = jsObject.list.filter((x) =>
+			x.dt_txt.includes("12:00:00")
+		);
 
+		console.log(fivedayforecast);
+		const weekday = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"];
+		let day = 0;
 
-        console.log(fivedayforecast);
-        const weekday = ['Sun', 'Mon', 'Tues', 'Wed', 'Thur', 'Fri', 'Sat'];
-        let day = 0;
+		fivedayforecast.forEach((forecast) => {
+			let d = new Date(forecast.dt_txt);
 
+			const tempt = document.querySelector("tempt");
+			const icon = document.querySelector("img");
 
-        fivedayforecast.forEach(forecast => {
+			const desc = forecast.weather[0].description;
+			const imagesrc =
+				"https://openweathermap.org/img/w/" + forecast.weather[0].icon + ".png";
 
-            let d = new Date(forecast.dt_txt);
+			document.getElementById(`dayofweek${day + 1}`).textContent =
+				weekday[d.getDay()];
 
-            const tempt = document.querySelector('tempt');
-            const icon = document.querySelector('img');
+			document.getElementById(`tempt${day + 1}`).textContent =
+				forecast.main.temp;
 
-            const desc = forecast.weather[0].description
-            const imagesrc = 'https://openweathermap.org/img/w/' + forecast.weather[0].icon + '.png';;
-
-            document.getElementById(`dayofweek${day+1}`).textContent = weekday[d.getDay()];
-
-            document.getElementById(`tempt${day+1}`).textContent = forecast.main.temp;
-
-            document.getElementById('imagesrc').innerHTML = imagesrc;
-            document.getElementById('icon').setAttribute('src', imagesrc);
-            document.getElementById('icon').setAttribute('alt', desc);
-            /*
+			document.getElementById("imagesrc").innerHTML = imagesrc;
+			document.getElementById("icon").setAttribute("src", imagesrc);
+			document.getElementById("icon").setAttribute("alt", desc);
+			/*
             let d = new Date(forecast.dt_txt);
             document.getElementById(`forecast${day+1}`).textContent = forecast.main.temp;
             const currentTemp = document.querySelector('forecast');
@@ -42,8 +45,6 @@ fetch(apiURL)
             document.getElementById('icon').setAttribute('src', imagesrc);
             document.getElementById('icon').setAttribute('alt', desc);
 */
-            day++;
-
-        });
-
-    });
+			day++;
+		});
+	});
