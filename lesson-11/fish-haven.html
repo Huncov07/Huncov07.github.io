@@ -49,12 +49,16 @@
         </ul>
     </nav>
     <main>
-        <h2>Fish Haven</h2>
-        <article class="hero">
+        <h2 class="sectionh2">Fish Haven, Idaho</h2>
+        <div class="bannerdiv">
             <picture>
-                <picture class="weathericon"> <img src="../lesson-5/images/images.png" alt="weathericon">
-         </picture>
-            <div class="hero-summary">
+                <source srcset="/lesson-11/images/fishhaven.jpg" media="(max-width: 33.5em)">
+                <source srcset="/lesson-11/images/fishhaven.jpg" media="(max-width:57.5em)">
+                <img src="/lesson-11/images/fishhaven.jpg" class="Image" alt="Preston">
+
+            </picture>
+
+            <div class="bannerSection">
                 <h3>Weather Summary</h3>
                 <p>Currently: <span id="curr"></span></p>
                 <p>High: <span id="tempH"></span>°F</p>
@@ -89,30 +93,23 @@
                 </tr>
             </table>
         </article>
-        <article class="blog">
-            <picture>
->           <img src="images/download.jpg" alt="a picture of community meeting">
-            </picture>
-            <h3>Founders Day Fresco</h3>
-            <p class="author">by Hunter Covington</p>
-            <p>
-                I was recently reflecting upon the founders 
-                day event held at Foundation Park each year. 
-                I have been taking the festival for granted 
-                and have not been properly engaging in perhaps 
-                the most popular community event of the year. 
-                In response, I contacted Ms. Sharon via email 
-                and expressed my desire to serve on the event 
-                committee. Well, you guessed it, the phone rings 
-                almost immediately and she promptly asks me to 
-                be the event committee chair. Literally, good 
-                grief! My appreciation for the years of dedicated, 
-                generous service of volunteers and sponsors has 
-                escalated beyond waht I thought I could fell for 
-                such a thing and ...
-            </p>
-            <a href="#">continue to full article</a>
-        </article>
+        <section class="newCard">
+            <h2>Live Event:</h2>
+
+        </section>
+        <div class="flex-container">
+
+            <div class="flex-item">
+                <img class="artimg " src="/lesson-11/images/screnerycopy.jpg" alt="artimg">
+
+                <h2>Bear Lake Oregon Trail</h2>
+                <i>By: Jane Joe Coordinator</i><br><br>
+                <p> Come and Head west on Fish Haven Canyon Rd 1.2 miles to parking area. We will be hosting a charity trail fun run/walk for the community organizations. All procedes will go to the community to help with surrounding issues. The trail will
+                    be along Bear Lake, which has scenery and family fun exerise for the entire family. The entire route is a 54 mile strech but we are not making you walk or run that long. We will update you with the routes next to Fish Haven Canyon
+                    Road. <a href="# ">continue to full artice</a></p>
+            </div>
+        </div>
+
         <article class="events">
             <h3>Upcoming Events</h3>
             <ul id="listEvents">
