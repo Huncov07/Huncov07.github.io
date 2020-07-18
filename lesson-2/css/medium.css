@@ -1,0 +1,21 @@
+/* tablet view */
+
+@media only screen and (min-width: 35.5em) {
+	main {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		max-width: 850px;
+	}
+	.visual-section {
+		display: block;
+	}
+	.whitespace-section {
+		grid-column: span 2;
+	}
+	h1 {
+		font-size: 25px;
+	}
+	h2 {
+		font-size: medium;
+	}
+}
